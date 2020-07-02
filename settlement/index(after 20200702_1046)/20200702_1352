@@ -9,7 +9,7 @@
 		<div class="contents">
 			<div class="subMenuTab">
 				<a href="/sinwon/settlement/" class="btn subPartMod <?=($subCode == '011' ? ' activated' : '')?>">현금집행결산</a>
-				<a href="/sinwon/settlement/settleEX" class="btn subPartMod <?=($subCode == '012' ? ' activated' : '')?>">구매자금집행결산</a>
+				<a href="/sinwon/settlement/ex_index" class="btn subPartMod <?=($subCode == '012' ? ' activated' : '')?>">구매자금집행결산</a>
 			</div> 
 			<div class="section horizontalManageSort searcManageSort topLineMod">
 				<div class="titleBox manageHeadlineSort">검색</div>
