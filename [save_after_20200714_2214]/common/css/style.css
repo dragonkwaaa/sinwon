@@ -1,0 +1,1765 @@
+html, 
+body{
+	/* overflow:auto; */
+	background-color : #fff;
+	/* min-width: 1550px; */
+	/* max-width : 1280px; */
+	margin : 0 auto;
+	height : 100%;
+	min-width : 1024px;
+}
+.container{
+	/* max-width:720px; */
+	margin:0 auto;
+	position:relative;
+	height: 100%;
+	background-color: #f4f8fa;
+}
+.contents {
+    /* margin-left: 260px; */
+    position: relative;
+	/* padding: 21px 43px; */
+	padding: 10px;
+	background-color : #f4f8fa;
+	font-size : 0;
+}
+.contents.flexMod {
+	display : flex; /* :: 각 박스가 동일한 높이가 되도록 하는 내용. */
+}
+.contents.overlay:after {
+	content : "";
+	position : fixed;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 100%;
+	background-color : rgba(0, 0, 0, 0.5);	
+	z-index : 5;
+}
+
+.ui-menu .ui-menu-item-wrapper {
+	padding : 10px !important;
+}
+.ui-menu .ui-menu-item {
+	border-left : 1px solid #ccc !important;
+	border-right : 1px solid #ccc !important;
+	width : calc(100% - 2px) !important;
+}
+
+
+/* :: 헤더 파트 open  */
+header {
+	/* border-bottom: 1px solid #ccc; */
+	font-size: 0;
+}
+header .logoCase {
+	display : inline-block;
+	width : 220px;
+	height : 50px;
+	line-height : 50px;
+	padding : 0 20px;
+	vertical-align : top;
+	font-size : 15px;
+	font-weight : 200;
+	/* background-color : #2F3746; */
+	color : #fff;
+}
+header .logoCase span {
+	vertical-align : middle;
+	/* display : none; */
+	font-size : 20px;
+	font-weight : 800;
+	color : rgb(96, 175, 158);
+}
+.logo.longSort {
+	/* width : 80px;
+	height : 17px; */
+	width : 200px;
+	height : 37px;
+	vertical-align : middle;
+	background : url(/sinwon/common/img/logo_long.png) no-repeat center / cover;
+}
+header .headerNav {
+	display : inline-block;
+	padding : 0 30px 0 0;
+	font-size : 13px;
+	color : #4d4f5c;
+	height : 50px;
+	line-height : 50px;
+}
+.headerNav.headerMainSort {
+	height : auto;
+	width : calc(100% - 580px);
+}
+.headerNav.headerMainSort a {
+	display : inline-block;
+}
+.headerNav.headerMainSort a.activated span {
+	color : #60af9e;
+}
+header .headerNav.rightSideSort  {
+	float : right;
+}
+header .headerNav .btn.userGradeSort {
+	margin : 0 24px 0 0;
+	position : relative;
+}
+header .headerNav .btn.userGradeSort:after {
+	content : "";
+	position : absolute;
+	width : 1px;
+	height : 100%;
+	top : 0;
+	right : -24px;
+	border-right : 1px solid #4d4f5c;
+}
+header .headerNav .btn.logoutSort {
+	margin : 0 0 0 20px;	
+}
+/* :: 헤더 파트 close  */
+
+/* :: 좌측 메뉴 파트 open  */
+.sideMenu.majorSort {
+    float: left;
+    width: 260px;
+    position: relative;
+    font-size: 0;
+}
+.sideMenu.majorSort .conGroup {
+    position: relative;
+    background-color: #fff;
+    height: 100%;
+    text-align: left;
+    font-size: 15px;
+}
+.sideMenu.majorSort .conGroup:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5000%;
+    background: #353e4f;
+    z-index: 0;
+}
+.conGroup .menuBox {
+    width: 100%;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+	margin: 0;
+	background-color : #353e4f;
+}
+.sideMenu .conGroup .menuBox a {
+    position: relative;
+	width: calc(100% - 50px);
+	height : 53px;
+	line-height : 53px;
+    padding: 0 25px;
+	color: #fff;
+	display : block;
+}
+.sideMenu .conGroup .menuBox a.activated {
+	color : #60af9e;
+	background-color : rgba(0, 0, 0, 0.1);
+}
+.sideMenu .conGroup .menuBox a.activated:after {
+	content : "";
+	display : block;
+	position : absolute;
+	top : 0;
+	left : 0;
+	background-color : #60af9e;
+	height : 100%;
+	width : 5px;
+
+}
+.menuBox a i,
+.menuBox a span {
+	vertical-align : middle;
+}
+/* :: 좌측 메뉴 파트 close  */
+
+/* :: as기사 등록 페이지 파트 open */
+.section {
+	display : block;
+	width : 100%;
+	height : auto;
+    /* min-height : 965px; */
+    min-height : 650px;
+	background-color : #fff;
+}
+.wrapper {
+	min-height : 100%;
+	position : relative;
+	width : 100%;
+	overflow : hidden;
+    margin : 0 auto;
+    background-color : #f4f8fa;
+}
+.titleBox.sectionSort {
+	display : block;
+	position : relative;
+	font-size : 28px;
+	color : #43425d;
+	padding : 34px 42px 0 42px;
+	margin : 0 0 30px 0;
+}
+.section .conGroup {
+	padding : 0 42px;
+}
+.conGroup .tbox {
+	display : inline-block;;
+	font-size : 11px;
+	border: 1px solid #d7dae2;
+	border-radius : 4px;
+	padding: 0 17px;
+	width : 589px;
+	height : 46px;
+    vertical-align : top;
+}
+.conGroup .tbox.long {
+	width : 737px;
+}
+.conGroup .btn.withTbox {
+	display : inline-block;
+	margin-left : 15px;
+	border-radius : 4px;
+	height : 48px;
+	line-height : 48px;
+	width : 131px;
+	text-align : center;
+	vertical-align : top;
+	font-size : 15px;
+}
+.section .btnGroup {
+	display : block;
+	margin-top : 50px;
+	margin-left : 310px;
+	/* text-align : center; */
+}
+.section .btnGroup a.btn {
+	display : inline-block;
+	width : 155px;
+	height : 60px;
+	line-height : 60px;
+	font-size : 20px;
+	border-radius : 4px;
+	text-align : center;
+}
+/* :: as기사 등록 페이지 파트 close */
+
+/* :: as 기사 관리 페이지 파트 open  */
+.section.searchSection {
+	height : auto;
+	min-height : auto;
+	margin-bottom : 17px;
+	font-size : 0;
+}
+.section .conGroup.searchSort {
+    padding: 25px 29px;
+}
+.conGroup.searchSort .sbox {
+	width : 175px;
+	margin-right : 12px;
+}
+a.btn.regLinkBtn {
+	font-size : 15px;
+	background-color : #353e4f;
+	color : #fff;
+	width : 131px;
+	height : 35px;
+	line-height : 35px;
+	text-align : center;
+	border-radius : 4px;
+}
+.titleBox .regLinkBtn {
+	position : absolute;
+	top : 50%;
+	right : 44px;
+}
+.conGroup .headLineBox {
+	display : block;
+	margin-bottom : 15px;
+}
+.conGroup .headLineBox a.btn.listDelSort {
+	font-size : 15px;
+	display : inline-block;
+	width : 92px;
+	line-height : 35px;
+	height : 35px;
+	border : 1px solid #60af9e;
+	color : #60af9e;
+	text-align : center;
+	border-radius : 4px;
+}
+.listTable thead {
+	background-color : #f5f6fa;
+}
+.listTable thead th {
+	font-weight : 400;
+	font-size : 14px;
+	color : #a3a6b4;
+	/* padding : 16px 0 15px 0; */
+	height : 45px;
+}
+.listTable tbody td {
+	/* padding : 23px 0 21px 0; */
+	height : 58px;
+	text-align : center;
+	/* color : #a3a6b4; */
+	color : #4d4f5c;
+	font-size : 14px;
+}
+.listTable a.btn.modifySort {
+	/* display : inline-block; */
+	margin : 0 auto;
+	display : block;
+	width : 80px;
+	height : 37px;
+	line-height : 37px;
+	text-align : center;
+	border-radius : 4px;
+	background-color : #303847;
+	color  : #fff;
+}
+.listTable a.btn.delSort {
+	/* display : inline-block; */
+	margin : 0 auto;
+	display : block;
+	width : 78px;
+	height : 35px;
+	line-height : 35px;
+	text-align : center;
+	border-radius : 4px;
+	border : 1px solid #303847;
+	color  : #303847;
+}
+.section.tableSect {
+	position : relative;
+}
+.page_group.absoluteMod {
+	padding : 0;
+	position : absolute;
+	bottom : 50px;
+	display : block;
+	width : calc(100% - 84px);
+}
+/* :: as 기사 관리 페이지 파트 close  */
+
+
+/* :: as 기사상세_기사정보 페이지 파트 open */
+.tabGroup.conSelectSort {
+	margin-bottom : 20px;
+	padding : 0 42px;
+}
+.tabGroup.conSelectSort ul {
+	border-bottom : 1px solid #e9e9f0;
+}
+.tabGroup.conSelectSort ul li + li {
+	margin-left : 12px;
+}
+.tabGroup.conSelectSort ul li {
+	display : inline-block;
+}
+.tabGroup.conSelectSort ul li a {
+	display : block;
+	font-size : 15px;
+	width : 140px;
+	height : 43px;
+	text-align : center;
+	line-height : 43px;
+	color : #43425d;
+	background-color : #e9e9f0;
+	border : 1px solid #e9e9f0;
+	border-bottom : none;
+	border-radius : 4px 4px 0 0;
+}
+.tabGroup.conSelectSort ul li a.activated {
+	background-color : #fff;
+	color : #60af9e;
+}
+/* :: as 기사상세_기사정보 페이지 파트 close */
+
+/* :: 직원등록 페이지 파트 open */
+.radioCase .radioTitle {
+	display : inline-block;
+	vertical-align : middle;
+	margin-left : 12px;
+	/* font-size : 15px; */
+	font-size : 11px;
+	font-weight : 600;
+}
+.tabGroup.conRadioSort {
+	margin-bottom : 20px;
+}
+.tabGroup.conRadioSort ul li {
+	display : inline-block;
+}
+.tabGroup.conRadioSort ul li + li {
+	margin-left : 50px;
+}
+.radioIconBox {
+	display : inline-block;
+	vertical-align : middle;
+}
+.subConGroup.branchStaffSort,
+.subConGroup.callStaffSort {
+	display : none;
+}
+.subConGroup.branchStaffSort.activated,
+.subConGroup.callStaffSort.activated {
+	display : block;
+}
+.dateSelectGroup .dateInputCase {
+	position : relative;
+	display : inline-block;
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.05);
+}
+.dateSelectGroup .dateInputCase:after {
+	content : "";
+	position : absolute;
+	top : 16px;
+	left : 17px;
+	width : 16px;
+	height : 16px;
+	background : url(/sinwon/common/img/icon_calendar_grey.png) no-repeat center / cover;
+}
+.dateSelectGroup .dateBox.shortMod {
+	width : 103px;
+	padding : 0 17px 0 53px;
+	color : #4d4f5c;
+}
+
+.conGroup .dateSelectGroup {
+	margin-bottom : 15px;
+}
+
+
+.sizeFixImg {
+	display : inline-block;
+	width : 285px;
+	height : 210px;
+}
+.imgUploadBox {
+    display: inline-block;
+    vertical-align: top;
+	/* border: 1px solid #ccc; */
+	background-color : #f0f2f8;
+    overflow: hidden;
+    position: relative;
+	width : 100%;
+	height : 100%;
+}
+
+.imgUploadBox:before {
+	content : "";
+	position : absolute;
+	top : 50%;
+	left : 50%;
+	text-align: center;
+	transform: translate(-50%, -60%);
+	-webkit-transform: translate(-50%, -60%);
+	width : 71px;
+	height : 71px;
+	background : url(/sinwon/common/img/icon_upload.png) no-repeat center / cover;
+
+	
+}
+.imgUploadBox .upload_btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 5;
+}
+.imgUploadBox canvas {
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 100%;
+	z-index : 10;
+}
+.imgUploadBox img {
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+	z-index: 10;
+	/* display : none; */
+	position : absolute;
+	top : 0;
+	left : 0;
+}
+.imgUploadBox .del_btn {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 3px 5px;
+    opacity: 1;
+    z-index: 15;
+    background-color: #60af9e;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 16px;
+    color: #fff;
+}
+
+.imgUploadBox input.hide {
+	display : none;
+}
+/* :: 직원등록 페이지 파트 close */
+
+/* :: 보고서작성관리 페이지 파트 open */
+.section.reportSearchSort .titleBox.sectionSort + .conGroup.regInfoSort {
+	padding : 0 42px 29px 42px;
+}
+.section.reportSearchSort {
+	min-height : auto;
+}
+.tbox.shortMod {
+	width : 248px;
+}
+input.dateBox::placeholder {
+	color : #4d4f5c;
+}
+input.dateBox:read-only {
+	background-color : rgb(250, 250, 250);
+}
+.section .conGroup.titleUnlinked {
+	padding : 27px 42px 0 42px;
+}
+.section .btnGroup.centerSort {
+	margin-left : 0;
+	text-align : center;
+}
+.section .btnGroup a.btn.printSort {
+	border : 1px solid #43425d;
+	width : 153px;
+	height : 58px;
+	line-height : 58px;
+}
+/* :: 보고서작성관리 페이지 파트 close */
+
+/* :: 로그인 페이지 파트 open */
+
+.contents.loginSort {
+	margin-left : 0;
+	padding : 0;
+	position : relative;
+	background-color : transparent;
+}
+.contents.loginSort:after {
+	content : "";
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 1080px;
+	background : url(/sinwon/common/img/loginBG.png) no-repeat center / cover;
+}
+.section.loginSect {
+	position : absolute;
+	min-height : auto;
+	width : 400px;
+	text-align : center;
+	top : 271px;
+	left : 50%;
+	transform:translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	z-index : 100;
+	background-color : transparent;
+}
+.loginTitleBox {
+	font-size : 0;
+	font-weight : 800;
+	color : #353e4f;
+}
+.loginTitleBox span {
+	font-size : 35px;
+}
+.loginsubTitleBox {
+	font-size : 18px;
+	color : #4d4f5c;
+	margin : 22px 0 63px 0;
+}
+.conGroup.loginInfoSort {
+	padding : 0;
+}
+.conGroup.loginInfoSort .tbox {
+	font-size : 15px;
+	display : block;
+	border : none;
+	border-bottom : 2px solid #e9e9f0;
+	padding : 0 6px;
+	height : 41px;
+	width : calc(100% - 12px);
+	border-radius : 0;
+	background-color : transparent;
+}
+.conGroup.loginInfoSort .tbox + .tbox {
+	margin-top : 35px;
+}
+.conGroup.loginInfoSort input::placeholder {
+	color : #4d4f5c;
+}
+.section .btnGroup.loginSort {
+	margin : 37px 0 0 0;
+}
+.section .btnGroup a.btn.loginSort {
+	width : 100%;
+	background-color : #353e4f;
+	color : #fff;
+	font-size : 18px;
+}
+.wrapper.loginSort {
+	overflow : initial;
+}
+/* :: 로그인 페이지 파트 close */
+
+
+/* :: 대시보드 페이지 파트 open */
+.section.dashTableSort {
+	min-height : 370px;
+}
+.section.dashStatusSort {
+	background-color : transparent;
+	margin-top : 23px;
+	min-height : auto;
+	font-size : 0;
+}
+.section.dashStatusSort .conGroup {
+	padding : 0;
+}
+.section.dashStatusSort .statusBox {
+	display : inline-block;
+	width : calc(25% - 22.5px);
+	height : 133px;
+	margin-right: 30px;
+	background-color : #fff;
+}
+.section.dashStatusSort .statusBox:last-child {
+	margin-right : 0;
+}
+.statusBox .statusTitle {
+	padding : 23px 20px 33px 20px;
+	font-size : 15px;
+	color : #43425d;
+	opacity : 0.5;
+}
+.statusBox .statusCountBox {
+	padding : 0 20px;
+	font-size : 0;
+}
+.statusBox .statusCountBox span {
+	display : inline-block;
+	width : calc(100% - 112px);
+	font-size : 25px;
+	font-weight :600;
+	vertical-align : middle;
+	color : #4d4f5c;
+}
+.statusBox .statusCountBox i.statusIcon {
+	display : inline-block;
+	width : 112px;
+	height : 40px;
+	vertical-align : middle;
+}
+.statusBox .statusCountBox i.statusIcon.jadeMod {
+	background : url(/sinwon/common/img/icon_status_jade.png) no-repeat center / cover;
+}
+.statusBox .statusCountBox i.statusIcon.amethyst {
+	background : url(/sinwon/common/img/icon_status_amethyst.png) no-repeat center / cover;
+}
+.statusBox .statusCountBox i.statusIcon.emerald {
+	background : url(/sinwon/common/img/icon_status_emerald.png) no-repeat center / cover;
+}
+.statusBox .statusCountBox i.statusIcon.topaz {
+	background : url(/sinwon/common/img/icon_status_topaz.png) no-repeat center / cover;
+}
+/* :: 대시보드 페이지 파트 close */
+
+/* :: 기본정보 페이지 묶음 파트 open  */
+.tabGroup.conSelectSort.pageChangeSort {
+	padding : 30px 30px 0 30px;
+	margin-bottom : 0;
+	background-color : #fff;
+}
+/* :: 기본정보 페이지 묶음 파트 close  */
+
+
+
+
+
+/* :: 신원_직원관리 페이지  open  */
+.section .btnGroup.searchBottomSort {
+	width : 100%;
+	margin-left : 0;
+	margin-top : 20px;
+	padding-bottom : 20px;
+}
+.conGroup .btnGroup.searchBottomSort .btn.full {
+	display : block;
+	width : 100%;
+	height : 48px;
+	line-height : 48px;
+	text-align : center;
+	border-radius: 4px;
+}
+.conGroup .btnGroup.searchBottomSort .btn.halfcut {
+	display : inline-block;
+	width : calc(50% - 10px);
+	margin-left : 14px;
+	height : 48px;
+	line-height : 48px;
+	font-size : 15px;
+}
+.conGroup .btnGroup.searchBottomSort .btn.halfcut:first-child {
+	margin-left : 0;
+}
+.conGroup .btnGroup.searchBottomSort .btn.specShowMod.hide {
+	display : none;
+}
+.conGroup .btnGroup.searchBottomSort .btn.specHideMod.hide {
+	display : none;
+}
+.specHideMod.hide {
+	display : none;
+}
+.section .btnGroup.dateTermSort {
+	display : inline-block;
+	margin-left : 0;
+	width : 400px;
+	/* width : 43%; */
+	font-size : 0;
+	margin-top : 0;
+	vertical-align : top;
+}
+.section .btnGroup.dateTermSort .btn {
+	display : inline-block;
+	max-width : 85px;
+	width : 15.5%;
+	height : 46px;
+	line-height : 48px;
+	border: 1px solid #e9ecef;
+	border-radius: 3px;
+	background-color: #f4f5f7;
+	text-align : center;
+	margin-left : 10px;
+	font-size : 13px;
+}
+.section .btnGroup.dateTermSort .btn:first-child {
+	margin-left : 0;
+}
+.section .btnGroup.dateTermSort .btn.activated {
+	background-color : #3f50f6;
+	border: 1px solid #3f50f6;
+	color : #fff;
+}
+.section.searchSort {
+	display : block;
+	min-height : auto;
+}
+.section.searchSort .tbox.searchInput {
+	width : 40%;
+}
+.section.searchSort .sbox {
+	width : 25%;
+}
+.conGroup .headLineBox.listControlSort a.btn.listDelSort {
+	line-height : 48px;
+	height : 46px;
+}
+.conGroup .headLineBox.listControlSort {
+	/* position : relative; */
+	margin-top : 40px;
+}
+.headLineBox .headRightAbMod {
+	font-size: 15px;
+    background-color: #353e4f;
+    color: #fff;
+    width: 131px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+	border-radius: 4px;
+	position: absolute;
+	/* top: 50%;
+	transform : translateY(-50%);
+	-webkit-transform : translateY(-50%);
+	right: 0; */
+	top : 20px;
+	right : 44px;
+}
+.sbox.widthresized {
+	max-width : 280px;
+	width : 25%;
+}
+.listTable.gapTdSort tbody td {
+    padding: 5px 0;
+}
+.listTable a.btn.memoSort {
+    display: inline-block;
+    width: 50px;
+    height: 23px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #303847;
+	color: #303847;
+	margin-top : 5px;
+}
+.inListRadioGroup {
+	text-align : left;
+}
+.inListRadioGroup input[type="radio"]:not(:checked) + label {
+	width : 15px;
+	height : 15px;
+}
+.inListRadioGroup input[type="radio"]:checked + label {
+	width : 15px;
+	height : 15px;
+}
+.inListRadioGroup .radioCase .radioTitle {
+	margin-left : 5px;
+}
+.inListRadioGroup .radioCase {
+	display : block;
+	margin-top : 7px;
+}
+.inListRadioGroup .radioCase:first-child {
+	margin-top : 0;
+}
+/* :: 신원_직원관리 페이지  close  */
+
+/* :: 신원_직원추가 페이지 open */
+.checkBoxTitle {
+	display : inline-block;
+	vertical-align : middle;
+	margin-left : 12px;
+	font-size : 15px;
+	font-weight : 600;
+}
+.checkBoxIconBox {
+    display: inline-block;
+    vertical-align: middle;
+}
+.checkBoxCase {
+	width : auto;
+}
+header .headerNav .btn.userGradeSort:nth-child(2) {
+	margin-left : 20px;
+}
+.passResetHide {
+	display : none;
+}
+.sboxGroup.listArraySort {
+	display : inline-block;
+	float : right;
+	margin-bottom : 10px;
+}
+.sboxGroup.listArraySort .sbox {
+	width : 100px;
+}
+
+.sboxGroup.listArraySort .sbox:nth-child(2) {
+	margin-left :5px;
+}
+/* :: 신원_직원추가 페이지 close */
+
+
+/* :: 지출요청관리 페이지 open */
+.inTableRadioGroup {
+	height : 24px;
+	line-height : 24px;
+}
+.inTableRadioGroup input[type="radio"]:not(:checked) + label {
+	width : 15px;
+	height : 15px;
+}
+.inTableRadioGroup input[type="radio"]:checked + label {
+	width : 15px;
+	height : 15px;
+}
+.inTableRadioGroup input[type="radio"] {
+	height : 15px;
+}
+.inTableRadioGroup .radioCase .radioTitle {
+	margin-left : 5px;
+}
+.inTableRadioGroup .radioCase {
+	display : inline-block;
+	margin-left : 10px;
+}
+.inTableRadioGroup .radioCase:first-child {
+	margin-left : 0;
+}
+.section.horizontalManageSort {
+	display : inline-block;
+	width : calc(40% - 14px);
+	vertical-align : top;
+	border : 1px solid #d7dae2;
+	position : relative;
+	min-width : 300px;
+	/* margin-left : 5px; */
+}
+.section.horizontalManageSort:first-child {
+    margin-left : 0;
+}
+
+.section.horizontalManageSort.extendMod {
+    /* width : calc(55% - 14px); */
+    width : calc(55% - 4px);
+}
+.section.horizontalManageSort.triplet1,
+.section.horizontalManageSort.triplet2 {
+	width : 25%;
+}
+
+.section.horizontalManageSort.triplet3 {
+	width : calc(50% - 21px);
+	min-width : 383px;
+}
+
+@media(max-width : 1240px) {
+	.section.horizontalManageSort.triplet3 {
+		width : calc(100% - 631px);
+	}
+}
+.section.horizontalManageSort:first-child {
+	margin-left : 0;
+}
+
+
+.section.searcManageSort {
+	display : inline-block;
+	/* width : calc(33.33% - 10px); */
+	width : 28%;
+	min-width : 300px;
+	vertical-align : top;
+	border : 1px solid #d7dae2;
+}
+
+.section.searcManageSort.extendMod {
+	width : 45%;
+}
+.section.searcManageSort.topLineMod {
+	display : block;
+	width : 100%;
+	min-height : auto;
+	margin-bottom : 25px;
+    padding-bottom : 10px;
+    margin-left : 0;
+}
+.titleBox.manageHeadlineSort {
+	display : block;
+	text-align : center;
+	background-color : #60af9e;
+	color : #fff;
+	font-size : 14px;
+	padding : 5px;
+}
+.conGroup.verticalManageSort {
+	display : block;
+	padding : 10px;
+	/* border-bottom : 1px solid #d7dae2; */
+}
+.conGroup.verticalManageSort.underBtnMod {
+	padding-bottom : 60px;
+}
+.conGroup.verticalManageSort + .verticalManageSort {
+	border-top : 1px solid #d7dae2;
+}
+.conGroup.verticalManageSort .searchGroup {
+	border : 1px solid #d7dae2;
+}
+.conGroup.verticalManageSort th {
+    border-right: 1px solid #d7dae2;
+	background-color: #f5f6fa;
+	font-size : 11px;
+	padding : 5px 0;
+	font-weight : 600;
+}
+.conGroup.verticalManageSort td {
+    /* padding: 5px; */
+    padding : 2px;
+	font-size : 11px;
+	border-right : 1px solid #d7dae2;
+
+}
+.conGroup.verticalManageSort tr {
+	border-bottom: 1px solid #d7dae2;
+}
+.conGroup.verticalManageSort .searchGroup .sbox {
+	width : 150px;
+}
+
+
+.conGroup.verticalManageSort .searchGroup .sbox > a {
+	padding : 10px;
+}
+.conGroup.verticalManageSort .searchGroup .sbox:before {
+	top : 16px;
+	right : 20px;
+}
+.conGroup.verticalManageSort .searchGroup .sbox ul {
+	top : 33px;
+	width : calc(100% - 14px);
+}
+.conGroup.verticalManageSort .searchGroup .tbox {
+	height : 33px;
+	width : calc(100% - 35px);
+	font-size : 12px;
+}
+.conGroup.verticalManageSort .searchGroup .tbox.topLineSearchMod {
+	width : calc(100% - 200px);
+}
+.conGroup.verticalManageSort .searchGroup .tbox.nearBtnMod {
+    width : 60%;
+	/* width : calc(100% - 400px); */
+}
+.sbox.blockMod {
+	display : block;
+}
+.conGroup.verticalManageSort .searchGroup .sbox ul li a {
+	padding : 13px;
+}
+.conGroup.verticalManageSort .searchGroup .radioCase .radioTitle {
+	font-size : 12px;
+}
+.conGroup.verticalManageSort .searchGroup .dateInputCase {
+	display : inline-block;
+	width : calc(50% - 10px);
+}
+
+.conGroup.verticalManageSort .searchGroup .dateInputCase.topLineSearchMod {
+	/* width : 200px; */
+	min-width : 100px;
+	width : calc(15% - 10px);
+}
+
+
+.conGroup.verticalManageSort .searchGroup .dateSelectGroup {
+	display : block;
+}
+.section .conGroup.verticalManageSort .searchGroup .btnGroup.dateTermSort {
+	width : 100%;
+}
+.section .conGroup.verticalManageSort .searchGroup .btnGroup.dateTermSort.topLineSearchMod {
+	width : calc(100% - 420px);
+	max-width : 400px;
+}
+.section .conGroup.verticalManageSort .searchGroup .btnGroup.dateTermSort .btn {
+	width : calc(33.33% - 9px);
+	margin-left : 10px;
+	margin-top : 5px;
+	height : 30px;
+	line-height : 32px;
+	max-width : initial;
+}
+.section .conGroup.verticalManageSort .searchGroup .btnGroup.dateTermSort.topLineSearchMod .btn {
+	width : 15%;
+	margin-top : 0;
+}
+.section .conGroup.verticalManageSort .searchGroup .btnGroup.dateTermSort .btn:first-child {
+	margin-left : 0;
+}
+.section .conGroup.verticalManageSort .searchGroup .btnGroup.dateTermSort.topLineSearchMod .btn:first-child {
+	margin-left : 10px;
+}
+.section .conGroup.verticalManageSort .searchGroup .btnGroup.dateTermSort .btn:nth-child(3n+1) {
+	margin-left : 0;
+}
+.section .conGroup.verticalManageSort .searchGroup .btnGroup.dateTermSort.topLineSearchMod .btn:nth-child(3n+1) {
+	margin-left : 15px;
+}
+.betweenWaveText {
+	display : inline-block;
+	vertical-align : top;
+	line-height : 35px;
+}
+.conGroup.verticalManageSort .headLineBox.listControlSort {
+	margin-top : 0;
+	margin-bottom : 10px;
+}
+.conGroup.verticalManageSort .headLineBox.listControlSort a.btn.listDelSort {
+	line-height : 35px;
+	height : 33px;
+	width : auto;
+	padding : 0 5px;
+}
+.conGroup.verticalManageSort .sboxGroup.listArraySort .sbox {
+	width : 100px;
+}
+.conGroup.verticalManageSort .sboxGroup.listArraySort .sbox > a {
+	padding: 10px;
+	width : calc(100% - 22px);
+}
+.conGroup.verticalManageSort .sboxGroup.listArraySort .sbox:before {
+	top: 16px;
+    right: 20px;
+}
+.conGroup.verticalManageSort .sboxGroup.listArraySort .sbox ul {
+	top : 34px;
+	width : calc(100% - 2px);
+}
+.titleBox.inlistConSort {
+	display : block;
+	position : relative;
+	font-size  : 13px;
+	font-weight : 800;
+	padding : 10px 0;
+}
+.headLineBox.listControlSort .headRightAbMod {
+	/* width : 65px; */
+	width : auto;
+	min-width : 65px;
+	padding : 0 5px;
+	height : 20px;
+	line-height : 20px;
+	top : 6px;
+	right : 0;
+	font-size : 12px;
+	font-weight : 600;
+}
+.searchResultTable {
+	border : 1px solid #d7dae2;
+}
+.conGroup.verticalManageSort input[type="checkbox"]:not(:checked) + label,
+.conGroup.verticalManageSort input[type="checkbox"]:checked + label {
+	width : 13px;
+	height : 13px;
+}
+
+.conGroup.verticalManageSort .checkBoxCase {
+	height : 13px;
+}
+.conGroup.verticalManageSort input[type="checkbox"] {
+	height : 13px;
+}
+.section.horizontalManageSort .page_group .page_box li {
+	width : 25px;
+	height : 25px;
+}
+.section.horizontalManageSort .page_group .page_box li a {
+	line-height : 25px;
+}
+.page_group.underSort {
+	padding : 0;
+	/* position : absolute; */
+	bottom : 20px;
+	width : 100%;
+	display : block;
+    text-align : center;
+    padding-top : 40px;
+}
+.conGroup.verticalManageSort.bottomRowSort {
+	border-bottom : none;
+	position : relative;
+}
+.conGroup.verticalManageSort.bottomRowSort.hide {
+	display : none;
+}
+.conGroup.verticalManageSort .searchResultTable td {
+	text-align : center;
+}
+.conGroup.verticalManageSort .searchResultTable tr.activated {
+	/* background-color : #60af9e; */
+	background-color : rgb(96, 175, 158, 0.2);
+}
+.conGroup.verticalManageSort .searchResultTable tr {
+	cursor : pointer;
+}
+table.infoGroup {
+	border: 1px solid #d7dae2;
+}
+.tbox.regFullSort {
+	width : calc(100% - 14px);
+	height : 100%;
+	height : 25px;
+	/* border : none; */
+	padding : 0 5px;
+}
+.conGroup.verticalManageSort table.infoGroup th,
+.conGroup.verticalManageSort table.infoGroup td {
+	padding : 0;
+}
+.tarea.regFullSort {
+	width : calc(100% - 34px);
+	height : 85px;
+	border : none;
+	resize : none;
+	padding : 10px 17px;
+}
+.dateInputCase.regFullSort .tbox.shortMod {
+	width : calc(100% - 35px);
+	height : 35px;
+}
+table.infoGroup .regDateDisplay {
+	height : 35px;
+	line-height : 35px;
+	padding : 0 17px;
+}
+.btnGroup.verticalBottomSort {
+	margin-left : 0;
+	margin-top : 10px;
+}
+.btnGroup.verticalBottomSort {
+	text-align : center;
+}
+.btnGroup.verticalBottomSort .btn.specShowMod,
+.btnGroup.verticalBottomSort .btn.specHideMod {
+	width: calc(100% - 20px);
+    height: 25px;
+    line-height: 25px;
+	font-size: 12px;
+	border-radius: 4px;
+	text-align: center;
+	/* background-color: #60af9e; */
+	border : 1px solid #60af9e;
+	color: #60af9e;
+}
+.btnGroup.verticalBottomSort .btn.hide {
+	display : none;
+}
+.conGroup.verticalManageSort.specHiddenMod {
+	border-top : none;
+}
+.conGroup.verticalManageSort.specHiddenMod.hide {
+	display : none;
+}
+.sbox.regFullSort {
+	width : 100%;
+	border : none;
+}
+.sbox.regFullSort > a {
+	border : none;
+	padding : 11px 17px;
+}
+.sbox.regFullSort:before {
+	top : 16px;
+}
+.sbox.regFullSort ul {
+	top : 35px;
+	left : -1px;
+}
+.sbox.regFullSort ul li a {
+	padding : 11px;
+}
+.btnGroup.horizontalBottomSort {
+	position : absolute;
+	bottom : 20px;
+	width : 100%;
+	text-align : center;
+	margin-left : 0;
+	margin-top : 0;
+}
+.btnGroup.horizontalBottomSort .btn.saveSort {
+	width: calc(100% - 20px);
+    height: 25px;
+    line-height: 25px;
+	font-size: 12px;
+	border-radius: 4px;
+	text-align: center;
+	background-color: #60af9e;
+	color: #fff;
+}
+.btnGroup.verticalBottomSort .btn.saveSort {
+	width: 100%;
+    height: 25px;
+    line-height: 25px;
+	font-size: 12px;
+	border-radius: 4px;
+	text-align: center;
+	background-color: #60af9e;
+	color: #fff;
+}
+.section .btnGroup a.btn.saveSort.hide {
+    display : none;
+}
+.btnGroup.verticalBottomSort .btn.searchSort {
+	width: calc(100% - 20px);
+    height: 25px;
+    line-height: 25px;
+	font-size: 12px;
+	border-radius: 4px;
+	text-align: center;
+	background-color: #60af9e;
+	color: #fff;
+}
+.section .btnGroup.inListTable a.btn.modifySort.mt3 {
+	margin-top : 3px;
+}
+.btnGroup.inListTable.mt3 {
+    margin-top : 3px;
+}
+/* :: 지출요청관리 페이지 close */
+
+
+/* :: 신원_직원관리 페이지 추가 open */
+.btnGroup.verticalBottomSort .btn.specSearchShowMod, 
+.btnGroup.verticalBottomSort .btn.specSearchHideMod {
+	width: calc(100% - 20px);
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    border-radius: 4px;
+    text-align: center;
+    /* background-color: #60af9e; */
+    border: 1px solid #60af9e;
+    color: #60af9e;
+}
+.conGroup.verticalManageSort.specSearchHiddenMod {
+	border-top : none;
+}
+.conGroup.verticalManageSort.specSearchHiddenMod.hide {
+	display : none;
+}
+.conGroup.verticalManageSort .btn.memoSort {
+	display: inline-block;
+    width: 30px;
+    height: 18px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #303847;
+    color: #303847;
+    margin-top: 5px;
+}
+.sbox.changeListInfoMod {
+	width : calc(100% - 145px);
+}
+.sbox.changeListInfoMod:before {
+    top: 16px;
+    right: 20px;
+}
+.sbox.changeListInfoMod > a {
+	padding: 10px;
+	width : calc(100% - 20px);
+}
+.sbox.changeListInfoMod ul {
+	top: 33px;
+    width: 100%;
+}
+.modifyHeadlineBtnGroup {
+	margin-bottom : 5px;
+}
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 101;
+}
+.popup.centerSort {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, -48%);
+    background-color: #fff;
+}
+.popup .popupCon {
+    position: relative;
+    min-width: 400px;
+    padding-bottom: 20px;
+}
+.popup.centerSort .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 7px;
+}
+.titleBox.popupSort {
+    display: block;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 28px;
+    text-align: center;
+	background-color: #60af9e;
+	color : #fff;
+}
+.popup .btnGroup.verticalBottomSort .btn.searchSort {
+	display : inline-block;
+}
+.inTableRadioGroup.inListSort {
+	padding : 0 17px;
+	/* height : 35px; */
+	height : auto;
+	line-height : 35px;
+}
+.conGroup.verticalManageSort .inTableRadioGroup.inListSort input[type="checkbox"] {
+	height : 35px;
+}
+.inTableRadioGroup.inListSort .checkBoxTitle {
+	margin-left : 0;
+}
+.conGroup.verticalManageSort .inTableRadioGroup.inListSort .checkBoxCase {
+	height : 35px;
+	margin-right : 10px;
+}
+.conGroup.verticalManageSort .inTableRadioGroup.inListSort .checkBoxCase:last-child {
+	margin-right : 0;
+}
+.inListFrameBox {
+	padding : 11px 17px;
+}
+/* :: 신원_직원관리 페이지 추가 close */
+
+
+/* :: 신원_이월금 페이지 open */
+.inTableRadioGroup.infoTableSort {
+	padding : 10px 17px;
+}
+/* :: 신원_이월금 페이지 close */
+
+/* :: ksg_20200621_2036 before : open */
+.btnGroup.inTableSearch {
+	display : inline-block;
+	/* margin-left : 0; */
+	margin-left : 8px;
+	margin-top : 0;
+	width : 15%;
+	vertical-align: top;
+}
+.section  .btnGroup.inTableSearch .btn.searchSort {
+	width: 100%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #60af9e;
+    color: #fff;
+}
+.inTableCheckGroup {
+	/* height : 24px; */
+	line-height : 24px;
+}
+.inTableCheckGroup .checkBoxTitle {
+	margin-left : 5px;
+	font-size : 12px;
+	font-weight : 600;
+}
+.inTableCheckGroup .checkBoxCase {
+	margin-left : 10px;
+}
+.inTableCheckGroup .checkBoxCase:first-child {
+	margin-left : 0;
+}
+.conGroup.verticalManageSort .inTableCheckGroup input[type="checkbox"] {
+	height : 24px;
+}
+.btnGroup.inListTable {
+	margin-top : 0;
+	margin-left : 0;
+}
+.section .btnGroup.inListTable a.btn.delSort {
+	margin : 0 auto;
+    /* width : 60px; */
+    width : 63px;
+	height : 23px;
+	line-height : 23px;
+	text-align : center;
+	border-radius : 4px;
+	border : 1px solid #303847;
+	color  : #303847;
+	font-size : 12px;
+	background-color : #fff;
+}
+
+.section .btnGroup.inListTable a.btn.modifySort {
+	margin : 0 auto;
+	width : 65px;
+	height : 25px;
+	line-height : 25px;
+	text-align : center;
+	border-radius : 4px;
+	background-color : #303847;
+	color  : #fff;
+	font-size : 12px;
+}
+.section .btnGroup a.btn.finished {
+	display : none;
+}
+.finishedText {
+	font-size : 12px;
+}
+.specInfoGroup.hide {
+	display : none;
+}
+.specRegGroup.hide {
+	display : none;
+}
+.horizontalGrandCover.quad2 {
+	display : inline-block;
+	width : 33%;
+	margin-left : 3px;
+}
+.section.horizontalManageSort.fullMod {
+	display: block;
+	width : 100%;
+	min-height : auto;
+	padding-bottom : 50px;
+	margin-left : 0;
+}
+.section.horizontalManageSort.fullMod.limitedHeight {
+	min-height : 460px;
+}
+.section.horizontalManageSort.fullMod.limitedHeight2 {
+	min-height : 482px;
+}
+.section.horizontalManageSort.quad1 {
+	width : 33%;
+	min-height : 1045px;
+	min-width : auto;
+}
+.section.horizontalManageSort.quad3 {
+	width : 32%;
+	min-height : 1045px;
+	min-width : auto;
+}
+/* :: ksg_20200621_2036 before : close */
+
+
+/* :: 예산 페이지 open */
+.btn.subPartMod {
+	display : inline-block;
+	font-size : 12px;
+	border : 1px solid #e9ecef;
+	background-color : #f4f5f7;
+	height : 30px;
+    min-width : 90px;
+	line-height : 30px;
+	/* padding : 0 20px; */
+    margin-right : 10px;
+    padding : 0 5px;
+	text-align : center;
+}
+.btn.subPartMod:last-child {
+	margin-right : 0;
+}
+.btn.subPartMod.activated {
+	background-color : #60af9e;
+	color : #fff;
+}
+.subMenuTab {
+	display : block;
+	margin-bottom : 10px;
+}
+.listSelector.leftSort {
+	display : inline-block;
+}
+
+select.sbox.full {
+	width : 100%;
+	border : none;
+}
+.selectGroup.monthSort select {
+	margin-right : 10px;
+	display : inline-block;
+	/* padding : 0 10px; */
+}
+
+.section.searcManageSort.fullMod {
+	width : 100%;
+}
+.searchResultTable.summarySort {
+	border-bottom : none;
+	background-color : #efefef;
+	margin-bottom : 5px;
+}
+.conGroup.verticalManageSort .searchResultTable.summarySort tr.activated {
+	background-color : #efefef;
+}
+.tbox.regFullSort.listMod {
+    /* width : 100%; */
+    width : calc(100% - 4px);
+	padding : 0;
+	text-align : center;
+}
+.tbox.regFullSort.priceMod {
+	/* width : calc(100% - 10px); */
+	width : calc(100% - 11px);
+	padding : 0 5px;
+	text-align : right;
+    vertical-align : middle;
+    /* margin-bottom : 5px; */
+}
+.sbox.regFullSort.listMod {
+	min-width : 100px;
+	padding : 0 25px 0 5px;
+}
+
+.section .btnGroup.inListTable a.btn.regSort {
+	margin: 0 auto;
+    width: 65px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #60af9e;
+    color: #fff;
+    font-size: 12px;
+}
+.section .btnGroup.inListTable a.btn.delSort.mt3 {
+	margin-top : 3px;
+}
+
+.confirmed {
+	background-color : rgb(204, 204, 204, 0.3);
+}
+.conGroup.verticalManageSort .searchResultTable tr.activated.confirmed {
+	background-color : rgb(204, 204, 204, 0.3);
+}
+.tAlignL.selectAltMod {
+	padding : 0 5px;
+}
+.accInfoGroup {
+    margin-bottom : 5px;
+}
+.accInfoGroup:last-child {
+    margin-bottom : 0;
+}
+.accInfoGroup .tbox.regFullSort.listMod {
+    height : 20px;
+}
+.section.searcManageSort.equalMod {
+    width : calc(50% - 2px);
+}
+.section.searcManageSort.budgetLeftMod {
+    width : calc(45% - 2px);
+}
+.section.searcManageSort.budgetRightMod {
+    width : calc(55% - 2px);
+}
+
+.section .btnGroup.inListTable a.btn.selSort.activated {
+    margin: 0 auto;
+    width: 65px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgb(96, 175, 120);
+    color: #fff;
+    font-size: 12px;
+    border : none;
+}
+.section .btnGroup.inListTable a.btn.selSort {
+    margin: 0 auto;
+    /* width: 60px; */
+    width: 63px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid rgb(96, 175, 120);;
+    color: rgb(96, 175, 120);;
+    font-size: 12px;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* :: 예산 페이지 close */
+
+
+/* :: 결산 페이지 open */
+.textBox.rigidSort {
+	padding : 11px 17px;
+}
+/* :: 결산 페이지 close */
+
+/* :: 집행관리 페이지 open */
+.customPaySort.hide {
+	display : none;
+}
+.section .btnGroup a.btn.vertSort {
+    display : block;
+    margin-top : 5px;
+}
+.section .btnGroup a.btn.vertSort:first-child {
+    margin-top : 0;
+}
+.priceWord {
+    text-align : right;
+    padding : 0 5px;
+    margin-top : 5px;
+}
+/* .measureWord {
+    text-align : center;
+    padding : 0 5px;
+    margin-top : 5px;
+} */
+/* :: 집행관리 페이지 close */
+
+/* :: 기초항목_지출과목 페이지 open */
+.tbox.numBox {
+	width : 15px;
+	padding : 5px;
+	height : auto;
+	text-align : center;
+}
+/* :: 기초항목_지출과목 페이지 close */
+
+/* :: 결제관리 페이지 open */
+.horizontalGrandCover.quad2.secondPayListSort {
+	position : relative;
+	background-color : #fff;
+	vertical-align: top;
+	border: 1px solid #d7dae2;
+	min-height: 1045px;
+    min-width: auto;
+}
+.listGroup.secondSort.hide {
+	display : none;
+}
+
+.changeSetBox {
+	position : absolute;
+	top : 50%;
+	transform : translateY(-50%);
+	-webkit-transform : translateY(-50%);
+	right : 0;
+}
+.tbox.changeSort {
+	width : 90px;
+	height : 25px;
+	display : inline-block;
+}
+.headLineBox .changeSetBox .headRightAbMod {
+	position : initial;
+	display : inline-block;
+	height : 25px;
+	line-height : 25px;
+	min-width : auto;
+}
+/* :: 결제관리 페이지 close */
+
+
+/* :: ksg_20200629_1244 open */
+.changed {
+    color : #ccc;
+}
+/* :: ksg_20200629_1244 close */
+
+/* :: 영업소목록 페이지 open */
+.headLineBox.listControlSort .headRightAbMod.saveBtn {
+    right : 85px;
+    color : #fff;
+    background-color : #60af9e;
+}
+/* :: 영업소목록 페이지 close */
+
+
+/* :: ksg_20200714_1936 open : 추가내용 */
+.emtyAlarm {
+    line-height : 30px;
+}
+/* :: ksg_20200714_1936 close : 추가내용 */
