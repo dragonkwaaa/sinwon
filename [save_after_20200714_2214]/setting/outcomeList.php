@@ -186,7 +186,7 @@
 							<th>계정과목</th>
 							<th>거래처</th>
 							<th>금액</th>
-                            <th>지급수단</th>
+                            <th>결제수단</th>
                             <th>사용여부</th>
 							<th>관리</th>
 						</tr>
@@ -291,7 +291,7 @@
 									<input class="tbox regFullSort" value="대구 임대료 선불">
 								</td>
 							</tr>
-							<tr>
+							<!-- <tr>
 								<th>구분</th>
 								<td>
 									<select class="sbox regFullSort">
@@ -299,31 +299,33 @@
 										<option>2. 변동비용</option>
 									</select>
 								</td>
-							</tr>
+							</tr> -->
 							<tr>
 								<th>계정과목</th>
 								<td>
-									<select class="sbox regFullSort">
+									<!-- <select class="sbox regFullSort">
 										<option>1. 인건비(급여)</option>
 										<option>2. 공과금</option>
 										<option selected>3. 임대료</option>
 										<option>4. 관리비</option>
-									</select>
+                                    </select> -->
+                                    <input class="tbox regFullSort" value="임대료">
 								</td>
 							</tr>
 							<tr>
 								<th>거래처</th>
 								<td>
-									<select class="sbox regFullSort">
+									<!-- <select class="sbox regFullSort">
 										<option selected>0. 직접입력</option>
 										<option>1. 메디드림(개인)</option>
 										<option>2. 명진병리과</option>
 										<option>3. 녹십자</option>
 										<option>4. 티앤씨</option>
-									</select>
+                                    </select> -->
+                                    <input class="tbox regFullSort" value="메디드림">
 								</td>
 							</tr>
-							<tr>
+							<!-- <tr>
 								<th>
 									<div>거래처</div>
 									<div>직접입력</div>
@@ -331,7 +333,7 @@
 								<td>
 									<input class="tbox regFullSort" value="대구 임대료 선불">
 								</td>
-							</tr>
+							</tr> -->
 							<tr>
 								<th>거래형태</th>
 								<td>
@@ -349,7 +351,7 @@
 							</tr>
 
 
-							<tr>
+							<!-- <tr>
 								<th>지급수단</th>
 								<td>
 									<select class="sbox regFullSort">
@@ -359,7 +361,7 @@
 										<option selected>4. 계좌이체</option>
 									</select>
 								</td>
-							</tr>
+							</tr> -->
 							<tr>
 								<th>결제수단</th>
 								<td>
@@ -384,7 +386,7 @@
 									<input class="tbox regFullSort onlyNum" value="대구 곽반장" readonly>
 								</td>
 							</tr>
-							<tr>
+							<!-- <tr>
 								<th>해당월(연.월)</th>
 								<td>
 									<input class="tbox regFullSort onlyNum" value="19.10">
@@ -395,11 +397,12 @@
 								<td>
 									<input class="tbox regFullSort onlyNum" value="6">
 								</td>
-							</tr>
+							</tr> -->
 							<tr>
 								<th>결제일</th>
 								<td>
-									<input class="tbox dateBox regFullSort" id="payDate" readonly="">
+                                    <!-- <input class="tbox dateBox regFullSort" id="payDate" readonly=""> -->
+                                    <input class="tbox regFullSort" value="20.06.12">
 								</td>
 							</tr>
 							<tr>
@@ -438,7 +441,7 @@
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
-							<tr>
+							<!-- <tr>
 								<th>구분</th>
 								<td>
 									<select class="sbox regFullSort">
@@ -447,33 +450,35 @@
 										<option>2. 변동비용</option>
 									</select>
 								</td>
-							</tr>
+							</tr> -->
 							<tr>
 								<th>계정과목</th>
 								<td>
-									<select class="sbox regFullSort">
+									<!-- <select class="sbox regFullSort">
 										<option>-선택-</option>
 										<option>1. 인건비(급여)</option>
 										<option>2. 공과금</option>
 										<option>3. 임대료</option>
 										<option>4. 관리비</option>
-									</select>
+                                    </select> -->
+                                    <input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>거래처</th>
 								<td>
-									<select class="sbox regFullSort">
+									<!-- <select class="sbox regFullSort">
 										<option>-선택-</option>
 										<option>0. 직접입력</option>
 										<option>1. 메디드림(개인)</option>
 										<option>2. 명진병리과</option>
 										<option>3. 녹십자</option>
 										<option>4. 티앤씨</option>
-									</select>
+                                    </select> -->
+                                    <input class="tbox regFullSort" value="">
 								</td>
 							</tr>
-							<tr>
+							<!-- <tr>
 								<th>
 									<div>거래처</div>
 									<div>직접입력</div>
@@ -481,7 +486,7 @@
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
-							</tr>
+							</tr> -->
 							<tr>
 								<th>거래형태</th>
 								<td>
@@ -500,7 +505,7 @@
 							</tr>
 
 
-							<tr>
+							<!-- <tr>
 								<th>지급수단</th>
 								<td>
 									<select class="sbox regFullSort">
@@ -511,7 +516,7 @@
 										<option>4. 계좌이체</option>
 									</select>
 								</td>
-							</tr>
+							</tr> -->
 							<tr>
 								<th>결제수단</th>
 								<td>
@@ -537,7 +542,7 @@
 									<input class="tbox regFullSort onlyNum" value="" readonly>
 								</td>
 							</tr>
-							<tr>
+							<!-- <tr>
 								<th>해당월(연.월)</th>
 								<td>
 									<input class="tbox regFullSort onlyNum" value="">
@@ -548,11 +553,12 @@
 								<td>
 									<input class="tbox regFullSort onlyNum" value="">
 								</td>
-							</tr>
+							</tr> -->
 							<tr>
 								<th>결제일</th>
 								<td>
-									<input class="tbox dateBox regFullSort" id="payDate" readonly="">
+                                    <!-- <input class="tbox dateBox regFullSort" id="payDate" readonly=""> -->
+                                    <input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>

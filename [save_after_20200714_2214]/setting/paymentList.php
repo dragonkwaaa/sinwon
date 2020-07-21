@@ -223,18 +223,20 @@
 								<input class="tbox regFullSort listMod onlyNum" value="" maxlength="4"/>
 							</td>
                             <td>
-                                <!-- <select class="sbox regFullSort">
-							    	<option>1. 카드</option>
-							    	<option>2. 계좌</option>
-							    </select> -->
                                 <input class="tbox regFullSort listMod" value="">
+                                <select class="sbox regFullSort mt5">
+							    	<option>1. 카드</option>
+                                    <option>2. 계좌</option>
+                                    <option>3. 어음</option>
+                                    <option>4. B2B</option>
+                                </select>
                             </td>
 							<td>
-                                <!-- <select class="sbox regFullSort listMod">
-							    	<option>1. 법인</option>
-							    	<option>2. 개인</option>
-							    </select> -->
                                 <input class="tbox regFullSort listMod" value="">
+                                <select class="sbox regFullSort mt5">
+							    	<option>1. 법인</option>
+                                    <option>2. 개인</option>
+                                </select>
                             </td>
                             <td>
                                 <input class="tbox regFullSort listMod" value="">
@@ -283,18 +285,20 @@
 								<input class="tbox regFullSort listMod onlyNum" value="1125" maxlength="4"/>
 							</td>
                             <td>
-                                <!-- <select class="sbox regFullSort">
+                                <input class="tbox regFullSort listMod" value="계좌">
+                                <select class="sbox regFullSort mt5">
 							    	<option>1. 카드</option>
-							    	<option>2. 계좌</option>
-							    </select> -->
-                                <input class="tbox regFullSort listMod" value="카드">
+                                    <option selected>2. 계좌</option>
+                                    <option>3. 어음</option>
+                                    <option>4. B2B</option>
+                                </select>
                             </td>
 							<td>
-                                <!-- <select class="sbox regFullSort">
+                                <input class="tbox regFullSort listMod" value="개인">
+                                <select class="sbox regFullSort mt5">
 							    	<option>1. 법인</option>
-							    	<option>2. 개인</option>
-							    </select> -->
-                                <input class="tbox regFullSort listMod" value="법인">
+                                    <option selected>2. 개인</option>
+                                </select>
                             </td>
                             <td>
                                 <input class="tbox regFullSort listMod" value="우리카드1">
@@ -343,18 +347,20 @@
 								<input class="tbox regFullSort listMod onlyNum" value="1144" maxlength="4"/>
 							</td>
                             <td>
-                                <!-- <select class="sbox regFullSort">
-							    	<option>1. 카드</option>
-							    	<option>2. 계좌</option>
-							    </select> -->
-                                <input class="tbox regFullSort listMod" value="계좌">
+                                <input class="tbox regFullSort listMod" value="카드">
+                                <select class="sbox regFullSort mt5">
+							    	<option selected>1. 카드</option>
+                                    <option>2. 계좌</option>
+                                    <option>3. 어음</option>
+                                    <option>4. B2B</option>
+                                </select>
                             </td>
 							<td>
-                                <!-- <select class="sbox regFullSort">
-							    	<option>1. 법인</option>
-							    	<option>2. 개인</option>
-							    </select> -->
-                                <input class="tbox regFullSort listMod" value="개인">
+                                <input class="tbox regFullSort listMod" value="법인">
+                                <select class="sbox regFullSort mt5">
+							    	<option selected>1. 법인</option>
+                                    <option>2. 개인</option>
+                                </select>
                             </td>
                             <td>
                                 <input class="tbox regFullSort listMod" value="우리계좌1">

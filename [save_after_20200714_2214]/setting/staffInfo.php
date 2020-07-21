@@ -156,12 +156,7 @@
 				</div>
 			</div>
 
-
-
-
-
-
-			<div class="section horizontalManageSort searcManageSort fullMod">
+			<div class="section horizontalManageSort searcManageSort extendMod">
 				<div class="titleBox manageHeadlineSort">직원목록</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort">
