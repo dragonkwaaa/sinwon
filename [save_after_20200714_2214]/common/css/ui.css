@@ -1,259 +1,417 @@
-.relative {
-	position : relative;
+.tAlignR {
+	text-align : right;
 }
-.absoluteR {
+.tAlignL {
+	text-align : left;
+}
+.sbox {
+    display: inline-block;
+	position: relative;
+	vertical-align : top;
+	width : 280px;
+}
+.sbox > a {
+    padding: 16.5px 17px;
+	border: 1px solid #d7dae2;
+	border-radius : 4px;
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.05);
+	width: calc(100% - 34px);
+	min-height : 13px;
+    display: block;
+    font-size: 13px;
+	text-align: left;
+	color : #4d4f5c;
+}
+
+.sbox ul {
+    position: absolute;
+    top: 46px;
+    border: 1px solid #d7dae2;
+    /* border-top: none; */
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    max-height: 208px;
+    overflow: auto;
+    z-index: 10;
+	display: none;
+	font-size : 11px;
+}
+.sbox ul li {
+    width: 100%;
+    text-align: left;
+}
+.sbox ul li:hover {
+	background-color : #60af9e;
+	color : #fff;
+}
+.sbox ul li a {
+	padding: 17px;
+	width : auto;
+	height : 100%;
+	display : block;
+}
+.sbox:before {
+    content: "";
+    width: 9px;
+    height: 5px;
+    position: absolute;
+    top: 23px;
+    right: 17px;
+    background: url(/sinwon/common/img/icon_dropDown.png) no-repeat center / cover;
+}
+
+select {
+	height : 35px;
+	padding : 0 25px 0 10px;
+	border-radius : 3px;
+	-webkit-appearance: none;
+	background: url(/sinwon/common/img/icon_dropDown.png) no-repeat right 10px top 50% / 9px 5px;
+	border : 1px solid #d7dae2;
+	-webkit-appearance: none; /* 네이티브 외형 감추기 */
+	-moz-appearance: none;
+	font-size : 11px;
+}
+select:focus {
+	outline : 1px solid #ccc;
+}
+select::-ms-expand {
+	display : none;
+}
+
+
+input:focus {
+	outline : 1px solid #ccc;
+}
+input::placeholder {
+	color : #cecfd0;
+}
+input:read-only {
+	background-color : #efefef;
+}
+textarea::placeholder {
+	color : #cecfd0;
+}
+textarea:read-only {
+	background-color : #efefef;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.checkBoxCase {
+	position : relative;
+	display : inline-block;
+	width : 22px;
+	height : 22px;
+}
+.radioCase {
+	position : relative;
+	display : inline-block;
+	width : auto;
+	height : auto;
+}
+
+input[type="checkbox"] {
+	width : 100%;
+	height : 22px;
 	position : absolute;
 	top : 0;
 	right : 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance : none;
+	outline : none;
+	border : none;
+	margin : 0;
+	cursor : pointer;
+	opacity : 0;
 }
-.hide {
-	display : none;
-}
-.absoluteT {
+input[type="radio"] {
+	width : 100%;
+	height : 30px;
 	position : absolute;
 	top : 0;
-	left : 0;
+	right : 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance : none;
+	outline : none;
+	border : none;
+	margin : 0;
+	cursor : pointer;
+	opacity : 0;
 }
-.absoluteL {
-	position : absolute;
-	top : 0;
-	left : 0;
+input[type="checkbox"]:checked + label {
+	display : block;
+	width : 22px;
+	height : 22px;
+	background : url("/sinwon/common/img/checkbox_full.png") no-repeat center / 100%;
 }
+input[type="checkbox"]:not(:checked) + label {
+	display : block;
+	width : 22px;
+	height : 22px;
+	background : url("/sinwon/common/img/checkbox_empty.png") no-repeat center / 100%;
+}
+
+input[type="radio"]:checked + label {
+	display : block;
+	width : 30px;
+	height : 30px;
+	background : url("/sinwon/common/img/radio_full.png") no-repeat center / 100%;
+}
+input[type="radio"]:not(:checked) + label {
+	display : block;
+	width : 30px;
+	height : 30px;
+	background : url("/sinwon/common/img/radio_empty.png") no-repeat center / 100%;
+}
+
+
+
+.page_group {
+    text-align: center;
+    padding: 80px 0 120px;
+}
+.page_group.subPaging {
+	padding : 10px 0;
+}
+.page_group .page_box {
+    display: inline-block;
+}
+.page_group .page_box li.on {
+	background-color: #959dae;
+	border: 1px solid #959dae;
+}
+.page_group .page_box li {
+    float: left;
+    border: 1px solid #959dae;
+    width: 33px;
+	height: 33px;
+	margin-left : 5px;
+	border-radius : 4px;
+}
+.page_group .page_box li.on a {
+	/* color: #3b3b3b; */
+	color : #fff;
+    font-weight: 400;
+}
+.page_group .page_box li a {
+	display : block;
+    width: 100%;
+    height: 100%;
+    line-height: 33px;
+    font-size: 15px;
+    color: #999999;
+}
+/* .page_group .page_box li.arrow.first a {
+    background: url(/nonghyup/manager/common/img/icon_page_first.png) no-repeat center;
+} */
+.page_group .page_box li.arrow.prev a {
+    background: url(/sinwon/common/img/icon_page_prev.png) no-repeat center / cover;
+}
+.page_group .page_box li.arrow.next a {
+    background: url(/sinwon/common/img/icon_page_next.png) no-repeat center / cover;
+}
+/* .page_group .page_box li.arrow.end a {
+    background: url(/nonghyup/manager/common/img/icon_page_end.png) no-repeat center;
+} */
+
+
+
+/* :: 아이콘 파트  open */
+.dashboardIcon {
+	width : 16px;
+	height : 16px;
+	background : url(/sinwon/common/img/icon_dashBoard_off.png) no-repeat center / cover;
+}
+.branchIcon {
+	width : 16px;
+	height : 16px;
+	background : url(/sinwon/common/img/icon_branch_off.png) no-repeat center / cover;
+}
+.staffIcon {
+	width : 16px;
+	height : 16px;
+	background : url(/sinwon/common/img/icon_staff_off.png) no-repeat center / cover;
+}
+.engineerIcon {
+	width : 16px;
+	height : 16px;
+	background : url(/sinwon/common/img/icon_engineer_off.png) no-repeat center / cover;
+}
+.problemIcon {
+	width : 16px;
+	height : 16px;
+	background : url(/sinwon/common/img/icon_problem_off.png) no-repeat center / cover;
+}
+.reportIcon {
+	width : 16px;
+	height : 16px;
+	background : url(/sinwon/common/img/icon_report_off.png) no-repeat center / cover;
+}
+a.activated > .dashboardIcon {
+	width : 16px;
+	height : 16px;
+	background : url(/sinwon/common/img/icon_dashBoard_on.png) no-repeat center / cover;
+}
+a.activated > .branchIcon {
+	width : 16px;
+	height : 16px;
+	background : url(/sinwon/common/img/icon_branch_on.png) no-repeat center / cover;
+}
+a.activated > .staffIcon {
+	width : 16px;
+	height : 16px;
+	background : url(/sinwon/common/img/icon_staff_on.png) no-repeat center / cover;
+}
+a.activated > .engineerIcon {
+	width : 16px;
+	height : 16px;
+	background : url(/sinwon/common/img/icon_engineer_on.png) no-repeat center / cover;
+}
+a.activated > .problemIcon {
+	width : 16px;
+	height : 16px;
+	background : url(/sinwon/common/img/icon_problem_on.png) no-repeat center / cover;
+}
+a.activated > .reportIcon {
+	width : 16px;
+	height : 16px;
+	background : url(/sinwon/common/img/icon_report_on.png) no-repeat center / cover;
+}
+/* :: 아이콘 파트  close */
+
+
+/* :: 마진 그룹 파트 open */
+.ml5 {
+	margin-left : 5px;
+}
+.ml6 {
+	margin-left : 6px;
+}
+.ml7 {
+	margin-left : 7px;
+}
+.ml8 {
+	margin-left : 8px;
+}
+.ml10 {
+	margin-left : 10px;
+}
+.ml11 {
+	margin-left : 11px;
+}
+.ml12 {
+	margin-left : 12px;
+}
+.ml14 {
+	margin-left : 14px;
+}
+.ml20 {
+	margin-left : 20px;
+}
+.ml50 {
+	margin-left : 50px;
+}
+.mt5 {
+	margin-top : 5px;
+}
+.mt7 {
+	margin-top : 7px;
+}
+.mt15 {
+	margin-top : 15px;
+}
+.mt20 {
+	margin-top : 20px;
+}
+.mt22 {
+	margin-top : 22px;
+}
+.mt27 {
+	margin-top : 27px;
+}
+.mt34 {
+	margin-top : 34px;
+}
+.mt38 {
+	margin-top : 38px;
+}
+.mb10 {
+	margin-bottom : 10px;
+}
+.mb15 {
+	margin-bottom : 15px;
+}
+.mr7 {
+	margin-right : 7px;
+}
+.mr10 {
+	margin-right : 10px;
+}
+.mr15 {
+	margin-right : 15px;
+}
+.mr20 {
+	margin-right : 20px;
+}
+.mr30 {
+	margin-right : 30px;
+}
+/* :: 마진 그룹 파트 close */
+
+
+/* :: 색상 그룹 파트 open */
+.f_white {
+	color : #fff;
+}
+.f_charcooal {
+	color : #43425d;
+}
+.f_emerald {
+	color : #60af9e;
+}
+.f_navy {
+	color : #303847;
+}
+.f_red {
+    color : red;
+}
+.bg_emerald {
+	background-color : #60af9e;
+}
+.bg_navy {
+	background-color : #303847;
+}
+/* :: 색상 그룹 파트 close */
+
+
+
+/* :: 글자 크기 파트  open */
+.f_semiBold {
+	font-weight : 600;
+}
+.f_bold {
+	font-weight : 800;
+}
+/* :: 글자 크기 파트  close */
+
+
+
+/* :: 앱솔루트 관련 파트 open */
 .absoluteMR {
 	position : absolute;
 	top : 50%;
 	right : 0;
-	transform : translateY(-50%);
 	-webkit-transform : translateY(-50%);
+	transform : translateY(-50%);
 }
-input::placeholder {
-	color : #888888;
-}
-textarea::placeholder {
-	color : #888888;
-}
-.verticalM {
-	vertical-align : middle;
-}
-.section {
-	width : 100%;
-	display : block;
-}
-label input[type=checkbox], 
-label input[type=radio] {
-    cursor: pointer;
-    outline: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-	background : url("/common/img/checkBox_off.png") no-repeat center / cover;
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    margin: 0;
-	/* vertical-align: middle; */
-	vertical-align: top;
-}
-
-label input[type=radio] {
-	background : #fff;
-	padding : 2px;
-	border : 1px solid #b3b3b3;
-	border-radius : 50% !important;
-}
-label input[type=radio]:checked {
-	border : 3px solid #ffc20e;
-}
-
-
-
-input[type=checkbox] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-input, input[type=text], 
-input[type=password], 
-.tbox {
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-    appearance: none !important;
-    -webkit-border-radius: 0!important;
-    box-shadow: none !important;
-    /* -webkit-border-radius: 0 !important; */
-    /* -moz-border-radius: 0 !important; */
-    /* border-radius: 0 !important; */
-}
-
-label input[type=checkbox]:checked {
-	background : url("/common/img/checkBox_on.png") no-repeat center / cover;
-}
-
-input[type=checkbox] + span, 
-input[type=radio] + span {
-    padding-left: 8px;
-	font-size: 14px;
-	line-height : 18px;
-    color: #010101;
-    display: inline-block;
-	cursor: pointer;
-	/* vertical-align: middle; */
-	vertical-align: top;
-}
-
-input:read-only {
-	background-color : #e3e3e3;
-} 
-input[readonly] {
-	background-color : #e3e3e3;
-} 
-.tAlignL {
-	text-align : left;
-}
-.tAlignR {
-	text-align : right;
-}
-.tAlignC {
-	text-align : center;
-}
-.vAlignT {
-	vertical-align : top;
-}
-.vAlignM {
-	vertical-align : middle;
-}
-.floatR {
-	float : right;
-}
-.f_underlined {
-	text-decoration : underline;
-}
-
-.sbox {
-	display : inline-block;
-	position : relative;
-}
-.sbox a {
-	padding : 18px 30px;
-	border : 1px solid #b3b3b3;
-	width : 151px;
-	display : block;
-	font-size : 16px;
-	text-align : left;
-}
-
-.sbox:before {
-	content : "";
-	width : 11px;
-	height : 6px;
+.absoluteR {
 	position : absolute;
-	top : 25px;
-	right : 24px;
-	background : url("/common/img/iconDrop.png") no-repeat center / cover;
+	right : 0;
 }
-
-.sbox ul {
-	position : absolute;
-	top : 54px;
-	border : 1px solid #b3b3b3;
-	border-top : none;
-	background-color : #fff;
-	width : calc(100% - 2px);
-	height : auto;
-	max-height : 208px;
-	overflow : auto;
-	z-index : 10;
-	display : none;
-}
-.sbox ul li {
-	padding : 18px 30px;
-	font-size : 16px;
-	width : auto;
-	text-align : left;
-}
-.sbox ul li:hover {
-	/* background-color : #ffc20e; */
-	cursor : pointer;
-}
-.sbox ul li.disabled {
-	background-color : #e3e3e3;
-}
-.sbox ul li.disabled:hover {
-	background-color : #e3e3e3;
-}
-
-select {
-    height: 48px;
-    padding: 0 25px 0 10px;
-    border-radius: 3px;
-    -webkit-appearance: none;
-    background: url(/sinwon/common/img/icon_dropDown.png) no-repeat right 10px top 50% / 9px 5px;
-    border: 1px solid #d7dae2;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    font-size: 14px;
-}
-select:focus {
-    outline : none;
-}
-input:focus {
-    outline : 1px solid #ccc;
-}
-
-
-.popup {
-	display : none;
-    /* position : fixed; */
-    position : absolute;
-	top : 50%;
-	left : 50%;
-	transform : translate(-50%, -50%);
-	-webkit-transform : translate(-50%, -50%);
-	background-color : #fff;
-	z-index : 101;
-}
-.tip {
-	font-size : 10px;
-	color : #fb376a;
-}
-
-.logoMain {
-    width: 115px;
-    height: 40px;
-    display: inline-block;
-    background: url(/sellPhone/common/img/logoMain.png) no-repeat center / cover;
-}
-.logoFooter {
-    width: 115px;
-    height: 40px;
-    display: inline-block;
-    background: url(/sellPhone/common/img/logoMain.png) no-repeat center / cover;
-}
-.iconBtn.kakaoSort {
-    width: 27px;
-    height: 25px;
-    display: inline-block;
-    background: url(/sellPhone/common/img/icon_socialKakao.png) no-repeat center / cover;
-}
-.iconBtn.blogSort {
-    width: 32px;
-    height: 32px;
-    display: inline-block;
-    background: url(/sellPhone/common/img/icon_socialBlog.png) no-repeat center / cover;
-}
-.iconBtn.myBagSort {
-    width: 18px;
-    height: 20px;
-    display: inline-block;
-    background: url(/sellPhone/common/img/icon_myBag.png) no-repeat center / cover;
-}
-.iconBtn.searchSort {
-    position : absolute;
-    top : 0;
-    right : 0;
-    width: 56px;
-    height: 48px;
-    display: inline-block;
-    background: url(/sellPhone/common/img/icon_search.png) no-repeat center / 20px 20px;
-}
+/* :: 앱솔루트 관련 파트 close */
