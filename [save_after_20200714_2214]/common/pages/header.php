@@ -30,10 +30,9 @@
 			<!-- <i class="branchIcon"></i> -->
 			<span class="">지출자료관리</span>
 		</a>
-		<a href="/sinwon/income/" class="<?=($lCode == '0104' ? ' activated' : '')?> mr20">
-			<!-- <i class="reportIcon"></i> -->
+		<!-- <a href="/sinwon/income/" class="<?=($lCode == '0104' ? ' activated' : '')?> mr20">
 			<span class="">영업소관리</span>
-		</a>
+		</a> -->
 		<!-- <a href="/sinwon/outcome/" class="<?=($lCode == '0105' ? ' activated' : '')?> mr20">
 			<span class="">고정지출관리</span>
 		</a> -->
