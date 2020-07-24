@@ -7,11 +7,28 @@
 	<div class="wrapper">
 		<div class="contents">
 
-            <div class="subMenuTab">
+            <!-- <div class="subMenuTab">
 				<a href="/sinwon/plan/" class="btn subPartMod ">회사운영예산집행</a>
                 <a href="/sinwon/plan/transferList" class="btn subPartMod  activated">운영예산이체리스트</a>
 				<a href="/sinwon/plan/ex_index" class="btn subPartMod ">구매자금예산집행</a>
+            </div> -->
+            
+
+
+            <div class="subMenuTab">
+				<a href="/sinwon/plan/" class="btn subPartMod">일일현금지출관리</a>
+                <a href="/sinwon/plan/ex_index" class="btn subPartMod">구매자금예산집행</a>
+                <a href="/sinwon/plan/transferList" class="btn subPartMod activated">이체리스트</a>
 			</div>
+
+
+
+
+
+
+
+
+
 			<div class="section horizontalManageSort searcManageSort topLineMod">
 				<div class="titleBox manageHeadlineSort">검색</div>
 				<div class="conGroup verticalManageSort">

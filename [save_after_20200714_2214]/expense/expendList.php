@@ -198,8 +198,8 @@
                             <!-- <col width="80"> -->
                             <col width="150">
                             <col width="80">
-                            <col width="80">
-                            <col width="80">
+                            <!-- <col width="80">
+                            <col width="80"> -->
                             <col width="80">
                             <col width="80">
                         </colgroup>
@@ -218,9 +218,9 @@
                             <!-- <th>작성자</th> -->
                             <th>비고</th>
                             <th>등록일</th>
-                            <th>일반승인</th>
-                            <th>중간승인</th>
-                            <th>최종승인</th>
+                            <th>승인</th>
+                            <!-- <th>중간승인</th>
+                            <th>최종승인</th> -->
 							<th>관리</th>
 						</tr>
 						</thead>
@@ -290,16 +290,7 @@
                                     <a href="javascript:void(0);" class="btn vertSort modifySort">일반승인</a>
                                 </div> -->
 							</td>
-                            <td>
-                                <!-- <div class="btnGroup inListTable">
-                                    <a href="javascript:void(0);" class="btn vertSort modifySort">중간승인</a>
-                                </div> -->
-							</td>
-                            <td>
-                                <!-- <div class="btnGroup inListTable">
-                                    <a href="javascript:void(0);" class="btn vertSort modifySort">최종승인</a>
-                                </div> -->
-							</td>
+                            
 							<td>
 								<div class="btnGroup inListTable">
 									<a href="javascript:void(0);" class="btn regSort">등록</a>
@@ -372,10 +363,10 @@
                             </td>
 							<td>
                                 <div class="btnGroup inListTable">
-                                    <a href="javascript:void(0);" class="btn vertSort modifySort">일반승인</a>
+                                    <a href="javascript:void(0);" class="btn vertSort modifySort">승인</a>
                                 </div>
 							</td>
-                            <td>
+                            <!-- <td>
                                 <div class="btnGroup inListTable">
                                     <a href="javascript:void(0);" class="btn vertSort modifySort">중간승인</a>
                                 </div>
@@ -384,7 +375,7 @@
                                 <div class="btnGroup inListTable">
                                     <a href="javascript:void(0);" class="btn vertSort modifySort">최종승인</a>
                                 </div>
-							</td>
+							</td> -->
 							<td>
 								<div class="btnGroup inListTable">
 									<a href="javascript:void(0);" class="btn vertSort modifySort">수정</a>
@@ -430,7 +421,11 @@
                                 <div>2020.06.01 11:00</div>
                                 <div>(등록자:곽주임)</div>
                             </td>
-							<td>
+                            <td>
+                                <div>2020.06.01 11:00</div>
+                                <div>곽선생(주임)</div>
+                            </td>
+							<!-- <td>
                                 <div></div>
                                 <div>2020.06.01 11:00</div>
                                 <div>(승인자:곽주임)</div>
@@ -444,7 +439,7 @@
                                 <div></div>
                                 <div>2020.06.01 11:00</div>
                                 <div>(승인자:이사님)</div>
-							</td>
+							</td> -->
 							<td>
 								승인됨
 							</td>
