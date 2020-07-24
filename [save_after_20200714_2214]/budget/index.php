@@ -197,10 +197,10 @@
 							<col width="110">
 							<col width="100">
 							<col width="100">
-							<col width="100">
+							<!-- <col width="100">
                             <col width="150">
 							<col width="100">
-                            <col width="80">
+                            <col width="80"> -->
                             <col width="80">
 						</colgroup>
 						<thead>
@@ -216,10 +216,10 @@
 							<th rowspan="2">결제일</th>
 							<th rowspan="2">비고</th>
                             <th rowspan="2">등록일</th>
-                            <th rowspan="2">이체선택</th>
+                            <!-- <th rowspan="2">이체선택</th>
                             <th rowspan="2">일반승인</th>
                             <th rowspan="2">중간승인</th>
-                            <th rowspan="2">최종승인</th>
+                            <th rowspan="2">최종승인</th> -->
 							<th rowspan="2">관리</th>
 						</tr>
 						<tr>
@@ -287,14 +287,14 @@
 								<!-- <div>2020-06-23 13:00</div>
                                 <div>(등록자:곽주임)</div> -->
 							</td>
-                            <td>
-                                <!-- <div class="btnGroup inListTable">
+                            <!-- <td>
+                                <div class="btnGroup inListTable">
 									<a href="javascript:void(0);" class="btn selcSort activated">해제</a>
-								</div> -->
-                            </td>
+								</div>
+                            </td> -->
+                            <!-- <td></td>
                             <td></td>
-                            <td></td>
-                            <td></td>
+                            <td></td> -->
 							<td>
 								<div class="btnGroup inListTable">
 									<a href="javascript:void(0);" class="btn regSort">등록</a>
@@ -360,7 +360,7 @@
                                 <div>2020-06-23 13:00</div>
                                 <div>(등록자:곽주임)</div>
 							</td>
-                            <td>
+                            <!-- <td>
                                 <div class="btnGroup inListTable">
 									<a href="javascript:void(0);" class="btn selSort activated">이체 선택</a>
 								</div>
@@ -379,15 +379,15 @@
                                 <div class="btnGroup inListTable">
                                     <a href="javascript:void(0);" class="btn vertSort modifySort">최종승인</a>
                                 </div>
-							</td>
+							</td> -->
 							<td>
                                 <div class="btnGroup inListTable">
                                     <div>
                                         <a href="javascript:void(0);" class="btn modifySort">수정</a>
                                     </div>
-									<div>
+									<!-- <div>
                                         <a href="javascript:void(0);" class="btn delSort mt3">승인</a>
-                                    </div>
+                                    </div> -->
 								</div>
 							</td>
 						</tr>
@@ -432,7 +432,7 @@
                                 <div>2020-06-23 13:00</div>
                                 <div>(등록자:곽주임)</div>
 							</td>
-                            <td>
+                            <!-- <td>
                                 <div>2020-06-23 13:00</div>
                                 <div>(실행자:곽주임)</div>
                             </td>
@@ -450,7 +450,7 @@
                                 <div></div>
                                 <div>2020.06.01 11:00</div>
                                 <div>(승인자:이사님)</div>
-							</td>
+							</td> -->
 							<td>
 								승인됨
 							</td>
