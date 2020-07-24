@@ -1,6 +1,7 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/sinwon/common/pages/head.php';
     $lCode					=	'0101';
     $subCode				=	'022';
+    $thirdCode				=	'0221';
 ?>
 <body>
 <div class="container">
@@ -11,7 +12,19 @@
             <div class="subMenuTab">
 				<a href="/sinwon/budget/" class="btn subPartMod <?=($subCode == '021' ? ' activated' : '')?>">회사운영예산</a>
 				<a href="/sinwon/budget/ex_index" class="btn subPartMod <?=($subCode == '022' ? ' activated' : '')?>">구매자금예산</a>
+            </div> 
+            
+
+
+            <div class="subMenuTab">
+				<a href="/sinwon/budget/ex_index" class="btn subPartMod <?=($thirdCode == '0221' ? ' activated' : '')?>">1차결제목록</a>
+				<a href="/sinwon/budget/ex_indexTwo" class="btn subPartMod <?=($thirdCode == '0222' ? ' activated' : '')?>">2차결제목록</a>
 			</div> 
+
+
+
+
+
 
 			<div class="section horizontalManageSort searcManageSort topLineMod">
 				<div class="titleBox manageHeadlineSort">예산검색</div>
@@ -70,6 +83,53 @@
 									</div>
 								</td>
 							</tr>
+
+                            <tr>
+								<th>
+									결제수단
+								</th>
+								<td colspan="3">
+									<div class="inTableCheckGroup">
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">전체</div>
+										</div>
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">카드</div>
+										</div>
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">현금</div>
+										</div>
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">어음</div>
+										</div>
+									</div>
+                                </td>
+                            </tr>
+
+
+
+
+
+
+
+
+
 
 							<tr>
 								<th>
@@ -218,10 +278,10 @@
                             <col width="100">
                             <col width="100">
                             <col width="100">
-                            <col width="100">
+                            <!-- <col width="100">
                             <col width="150">
                             <col width="100">
-                            <col width="80">
+                            <col width="80"> -->
                             <col width="80">
 						</colgroup>
 						<thead>
@@ -247,10 +307,10 @@
 							<th rowspan="2">지급일자</th>
 							<th rowspan="2">비고</th>
 							<th rowspan="2">등록일</th>
-                            <th rowspan="2">이체 선택</th>
+                            <!-- <th rowspan="2">이체 선택</th>
                             <th rowspan="2">일반승인</th>
                             <th rowspan="2">중간승인</th>
-                            <th rowspan="2">최종승인</th>
+                            <th rowspan="2">최종승인</th> -->
 							<th rowspan="2">관리</th>
 						</tr>
 						<!-- <tr>
@@ -333,14 +393,7 @@
                                 <div>2020-06-23 13:00</div>
                                 <div>(등록자:곽주임)</div>
 							</td>
-                            <td>
-                                <!-- <div class="btnGroup inListTable">
-									<a href="javascript:void(0);" class="btn selSort">이체 선택</a>
-								</div> -->
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                           
 							<td>
 								<div class="btnGroup inListTable">
 									<a href="javascript:void(0);" class="btn regSort">등록</a>
@@ -419,7 +472,7 @@
                                 <div>2020-06-23 13:00</div>
                                 <div>(등록자:곽주임)</div>
 							</td>
-                            <td>
+                            <!-- <td>
                                 <div class="btnGroup inListTable">
 									<a href="javascript:void(0);" class="btn selSort">이체 선택</a>
 								</div>
@@ -438,15 +491,15 @@
                                 <div class="btnGroup inListTable">
                                     <a href="javascript:void(0);" class="btn vertSort modifySort">최종승인</a>
                                 </div>
-							</td>
+							</td> -->
 							<td>
                                 <div class="btnGroup inListTable">
                                     <div>
                                         <a href="javascript:void(0);" class="btn modifySort">수정</a>
                                     </div>
-									<div>
+									<!-- <div>
                                         <a href="javascript:void(0);" class="btn delSort mt3">이체</a>
-                                    </div>
+                                    </div> -->
 								</div>
 							</td>
 						</tr>
