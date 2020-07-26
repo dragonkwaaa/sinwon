@@ -202,6 +202,12 @@
                         </colgroup>
 						<thead>
 						<tr>
+                            <th rowspan="2">
+                                <div class="checkBoxIconBox">
+									<input type="checkbox" name="" value="">
+									<label></label>
+								</div>
+                            </th>
 							<th rowspan="2">일</th>
                             <th rowspan="2">과목구분</th>
 							<th rowspan="2">과목</th>
@@ -222,6 +228,7 @@
                         
                         
                         <tr>
+                            <td></td>
 							<td>2</td>
 							<td>
                                 <div class="accInfoGroup">
@@ -281,6 +288,12 @@
 
 
 						<tr>
+                            <td>
+                                <div class="checkBoxIconBox">
+									<input type="checkbox" name="" value="">
+									<label></label>
+								</div>
+                            </td>
 							<td>5</td>
 							<td>
                                 <div class="accInfoGroup">
