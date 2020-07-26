@@ -8,14 +8,14 @@
 		<a href="/sinwon/" class="<?=($lCode == '0100' ? ' activated' : '')?> mr20">
 			<!-- <i class="dashboardIcon"></i> -->
 			<span class="">대시보드</span>
+        </a>
+        <a href="/sinwon/plan/" class="<?=($lCode == '0106' ? ' activated' : '')?> mr20">
+			<!-- <i class="engineerIcon"></i> -->
+			<span class="">집행관리</span>
 		</a>
 		<a href="/sinwon/budget/" class="<?=($lCode == '101' ? ' activated' : '')?> mr20">
 			<!-- <i class="dashboardIcon"></i> -->
 			<span class="">예산관리</span>
-		</a>
-		<a href="/sinwon/plan/" class="<?=($lCode == '0106' ? ' activated' : '')?> mr20">
-			<!-- <i class="engineerIcon"></i> -->
-			<span class="">집행관리</span>
 		</a>
 		<a href="/sinwon/settlement/" class="<?=($lCode == '110' ? ' activated' : '')?> mr20">
 			<!-- <i class="branchIcon"></i> -->
