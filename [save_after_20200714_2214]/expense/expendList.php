@@ -165,6 +165,11 @@
 							<div class="titleText">검색결과</div>
 						</div>
 						<div class="sboxGroup listArraySort">
+
+
+                            <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
+                            <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
+                        
 							<select class="sbox">
 								<option>번호순▼</option>
 								<option>번호순▲</option>
