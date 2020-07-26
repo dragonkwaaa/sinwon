@@ -293,7 +293,13 @@
 						</colgroup>
 						<thead>
 						<tr>
-							<th rowspan="2">No.</th>
+                            <th rowspan="2">
+                                <div class="checkBoxIconBox">
+									<input type="checkbox" name="" value="">
+									<label></label>
+								</div>
+                            </th>
+							<th rowspan="2">일</th>
 							<th rowspan="2">구분</th>
 							<th rowspan="2">거래처</th>
                             <th rowspan="2">해당월</th>
@@ -314,6 +320,7 @@
 						<tbody>
 
                         <tr>
+                            <td></td>
 							<td>2</td>
 							<td>
                                 <input class="tbox regFullSort listMod" value="">
@@ -392,6 +399,12 @@
 							</td>
 						</tr>
 						<tr>
+                            <td>
+                                <div class="checkBoxIconBox">
+									<input type="checkbox" name="" value="">
+									<label></label>
+								</div>
+                            </td>
 							<td>1</td>
 							<td>
                                 <input class="tbox regFullSort listMod" value="카드">
