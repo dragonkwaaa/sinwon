@@ -6,10 +6,16 @@
 	<?php include $_SERVER['DOCUMENT_ROOT'] . '/sinwon/common/pages/header.php'; ?>
 	<div class="wrapper">
 		<div class="contents">
-        <!-- <div class="subMenuTab">
-			<a href="/sinwon/expense/expendList" class="btn subPartMod  activated">현금집행</a>
-			<a href="/sinwon/expense/ex_expendList" class="btn subPartMod ">구매자금집행</a>
-		</div> -->
+       
+
+            <div class="subMenuTab">
+                <a href="/sinwon/expense/expendList" class="btn subPartMod  activated">지출자료관리</a>
+                <a href="/sinwon/expense/outcomeList" class="btn subPartMod">고정지출관리</a>
+			</div>
+
+
+
+
 			<div class="section horizontalManageSort searcManageSort topLineMod">
 				<div class="titleBox manageHeadlineSort">검색</div>
 				<div class="conGroup verticalManageSort">
