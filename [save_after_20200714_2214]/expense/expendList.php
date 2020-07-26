@@ -211,7 +211,13 @@
                         </colgroup>
 						<thead>
 						<tr>
-							<th>No.</th>
+                            <th>
+                                <div class="checkBoxIconBox">
+									<input type="checkbox" name="" value="">
+									<label></label>
+								</div>
+                            </th>
+							<th>일</th>
                             <th>과목</th>
 							<th>지출자료분류</th>
                             <th>일자</th>
@@ -232,6 +238,7 @@
 						</thead>
 						<tbody>
 						<tr>
+                            <td></td>
 							<td>3</td>
                             <td>
                                 <div class="accInfoGroup">
@@ -306,6 +313,12 @@
 
                         
                         <tr>
+                            <td>
+                                <div class="checkBoxIconBox">
+									<input type="checkbox" name="" value="">
+									<label></label>
+								</div>
+                            </td>
 							<td>2</td>
                             <td>
                                 <div class="accInfoGroup">
@@ -390,6 +403,12 @@
 							</td>
 						</tr>
                         <tr>
+                            <td>
+                                <div class="checkBoxIconBox">
+									<input type="checkbox" name="" value="">
+									<label></label>
+								</div>
+                            </td>
 							<td>1</td>
                             <td>
                                 <div>1234</div>
