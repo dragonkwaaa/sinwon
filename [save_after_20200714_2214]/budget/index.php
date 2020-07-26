@@ -184,53 +184,54 @@
 						</tr>
 						
 						</tbody>
-					</table>
-					<table class="searchResultTable ">
+                    </table>
+                    
+
+
+                    <table class="searchResultTable">
 						<colgroup>
-							<col width="50">
-							<col width="100">
-							<col width="120">
-							<col width="80">
-							<col width="120">
-							<col width="100">
-							<col width="100">
-							<col width="110">
-							<col width="100">
-							<col width="100">
-							<!-- <col width="100">
-                            <col width="150">
-							<col width="100">
-                            <col width="80"> -->
+                            <col width="50">
+                            <!-- <col width="80"> -->
+                            <col width="100">
+                            <col width="120">
                             <col width="80">
-						</colgroup>
+                            <col width="50">
+                            <col width="100">
+                            <col width="100">
+                       
+                        </colgroup>
 						<thead>
 						<tr>
-							<th rowspan="2">No.</th>
+							<th rowspan="2">일</th>
+                            <th rowspan="2">과목구분</th>
 							<th rowspan="2">과목</th>
-                            <th rowspan="2">거래처</th>
-                            <th rowspan="2">직원</th>
-                            <th rowspan="2">적요</th>
-							<th colspan="2">예산</th>
-							<th rowspan="2">결제수단</th>
-							<th rowspan="2">결제수단정보</th>
-							<th rowspan="2">결제일</th>
-							<th rowspan="2">비고</th>
-                            <th rowspan="2">등록일</th>
-                            <!-- <th rowspan="2">이체선택</th>
-                            <th rowspan="2">일반승인</th>
-                            <th rowspan="2">중간승인</th>
-                            <th rowspan="2">최종승인</th> -->
-							<th rowspan="2">관리</th>
+                            <th colspan="2">예산</th>
+                            <th colspan="2">결산</th>
+                            <th rowspan="2">예산대비 증감</th>
+                            <th rowspan="2">관리</th>
+
 						</tr>
-						<tr>
-							<th>수입(원)</th>
-							<th>지출(원)</th>
-						</tr>
+                        <tr>
+                            <th>수입</th>
+                            <th>지출</th>
+                            <th>수입</th>
+                            <th>지출</th>
+                        </tr>
 						</thead>
 						<tbody>
-						<tr>
-							<td>3</td>
-                            <td>
+                        
+                        
+                        <tr>
+							<td>2</td>
+							<td>
+                                <div class="accInfoGroup">
+                                  <input class="tbox regFullSort listMod" placeholder="구분 코드" value="">
+                                </div>
+                                <div class="accInfoGroup">
+                                  <input class="tbox regFullSort listMod" placeholder="과목 구분명" value="">
+                                </div>
+                            </td>
+							<td>
                                 <div class="accInfoGroup">
                                   <input class="tbox regFullSort listMod" placeholder="과목코드" value="">
                                 </div>
@@ -238,225 +239,104 @@
                                   <input class="tbox regFullSort listMod" placeholder="과목명" value="">
                                 </div>
                             </td>
-                            <td>
-                                <div class="accInfoGroup">
-                                  <input class="tbox regFullSort listMod" placeholder="거래처코드" value="">
-                                </div>
-                                <div class="accInfoGroup">
-                                  <input class="tbox regFullSort listMod" placeholder="거래처명" value="">
-                                </div>
-                            </td>
-                            <td>
-                                <div class="accInfoGroup">
-                                  <input class="tbox regFullSort listMod" placeholder="직원코드" value="">
-                                </div>
-                                <div class="accInfoGroup">
-                                  <input class="tbox regFullSort listMod" placeholder="직원명" value="">
-                                </div>
-                            </td>
-                            <td>
+							<!-- <td>
                                 <input class="tbox regFullSort listMod" value="">
-							</td>
+							</td> -->
+							<!-- <td>
+								<input class="tbox regFullSort listMod" value="">
+							</td> -->
 							<td>
 								<input class="tbox regFullSort listMod priceMod onlyNum" value="">
 							</td>
 							<td>
 								<input class="tbox regFullSort listMod priceMod onlyNum" value="">
 							</td>
-							<td>
-                                <input class="tbox regFullSort listMod" value="">
+                            <td>
+								<input class="tbox regFullSort listMod priceMod onlyNum" value="">
 							</td>
 							<td>
-								<div class="accInfoGroup">
-                                  <input class="tbox regFullSort listMod" value="" placeholder="은행/카드사">
-                                </div>
-                                <div class="accInfoGroup">
-                                  <input class="tbox regFullSort listMod" value="" placeholder="카드/계좌번호">
-                                </div>
-                                <div class="accInfoGroup">
-                                  <input class="tbox regFullSort listMod" value="" placeholder="예금주">
-                                </div>
-							</td>
-							<td>
-								<input class="tbox dateBox regFullSort listMod" id="payDate_2">
+								<input class="tbox regFullSort listMod priceMod onlyNum" value="">
 							</td>
                             <td>
-								<input class="tbox regFullSort listMod" placeholder="" value="">
+                                <input class="tbox regFullSort listMod priceMod onlyNum" value="" readonly="">
 							</td>
-							<td>
-								<!-- <div>2020-06-23 13:00</div>
-                                <div>(등록자:곽주임)</div> -->
-							</td>
-                            <!-- <td>
-                                <div class="btnGroup inListTable">
-									<a href="javascript:void(0);" class="btn selcSort activated">해제</a>
-								</div>
-                            </td> -->
-                            <!-- <td></td>
-                            <td></td>
-                            <td></td> -->
 							<td>
 								<div class="btnGroup inListTable">
 									<a href="javascript:void(0);" class="btn regSort">등록</a>
 								</div>
 							</td>
 						</tr>
-                        <tr>
-							<td>2</td>
-                            <td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<tr>
+							<td>5</td>
+							<td>
                                 <div class="accInfoGroup">
-                                  <input class="tbox regFullSort listMod" placeholder="과목코드" value="1122">
+                                  2
                                 </div>
                                 <div class="accInfoGroup">
-                                  <input class="tbox regFullSort listMod" placeholder="과목명" value="소모품비(관리)">
+                                  고정비용
                                 </div>
                             </td>
                             <td>
                                 <div class="accInfoGroup">
-                                  <input class="tbox regFullSort listMod" placeholder="거래처코드" value="1234">
+                                  1111
                                 </div>
                                 <div class="accInfoGroup">
-                                  <input class="tbox regFullSort listMod" placeholder="거래처명" value="의약품도매점">
+                                  인건비(급여)
                                 </div>
                             </td>
                             <td>
-                                <div class="accInfoGroup">
-                                  <input class="tbox regFullSort listMod" placeholder="3311" value="">
-                                </div>
-                                <div class="accInfoGroup">
-                                  <input class="tbox regFullSort listMod" placeholder="곽대리" value="">
-                                </div>
-                            </td>
+                                0 원
+							</td>
+							<td>
+								0 원
+							</td>
                             <td>
-                                <input class="tbox regFullSort listMod" value="">
+                                0 원
 							</td>
+                            <td>
+                                1,0,000,000 원
+							</td>
+                            <td>
+                                - 1,0,000,000 원
+							</td>
+                            
+							
 							<td>
-								<input class="tbox regFullSort listMod priceMod onlyNum" value="">
-							</td>
-							<td>
-								<input class="tbox regFullSort listMod priceMod onlyNum" value="1,000,000">
-							</td>
-							<td>
-                                <input class="tbox regFullSort listMod" value="국민계좌1">
-							</td>
-							<td>
-								<div class="accInfoGroup">
-                                  <input class="tbox regFullSort listMod" value="국민은행" placeholder="">
-                                </div>
-                                <div class="accInfoGroup">
-                                  <input class="tbox regFullSort listMod" value="1234-1234-1234" placeholder="">
-                                </div>
-                                <div class="accInfoGroup">
-                                  <input class="tbox regFullSort listMod" value="곽반장" placeholder="">
-                                </div>
-							</td>
-							<td>
-								<input class="tbox dateBox regFullSort listMod" id="payDate_2">
-							</td>
-							<td>
-								<input class="tbox regFullSort listMod" value="에이디치히얌 소모품 구매">
-							</td>
-							<td>
-                                <div>2020-06-23 13:00</div>
-                                <div>(등록자:곽주임)</div>
-							</td>
-                            <!-- <td>
-                                <div class="btnGroup inListTable">
-									<a href="javascript:void(0);" class="btn selSort activated">이체 선택</a>
+								<div class="btnGroup inListTable">
+									<a href="javascript:void(0);" class="btn modifySort">수정</a>
+									<!-- <a href="javascript:void(0);" class="btn delSort mt3">집행</a> -->
+									<!-- <a href="javascript:void(0);" class="btn delSort mt3">이월</a> -->
 								</div>
-                            </td>
-                            <td>
-                                <div class="btnGroup inListTable">
-                                    <a href="javascript:void(0);" class="btn vertSort modifySort">일반승인</a>
-                                </div>
-							</td>
-                            <td>
-                                <div class="btnGroup inListTable">
-                                    <a href="javascript:void(0);" class="btn vertSort modifySort">중간승인</a>
-                                </div>
-							</td>
-                            <td>
-                                <div class="btnGroup inListTable">
-                                    <a href="javascript:void(0);" class="btn vertSort modifySort">최종승인</a>
-                                </div>
-							</td> -->
-							<td>
-                                <div class="btnGroup inListTable">
-                                    <div>
-                                        <a href="javascript:void(0);" class="btn modifySort">수정</a>
-                                    </div>
-									<!-- <div>
-                                        <a href="javascript:void(0);" class="btn delSort mt3">승인</a>
-                                    </div> -->
-								</div>
-							</td>
-						</tr>
-						<tr class="confirmed">
-							<td>1</td>
-                            <td>
-								<div>1244</div>
-                                <div>인건비(급여)</div>
-							</td>
-                            <td>
-								<div>1234</div>
-                                <div>약품소매점</div>
-							</td>
-                            <td>
-								<div>1234</div>
-                                <div>곽소장</div>
-							</td>
-                            <td>
-								인건비 지급
-							</td>
-                            <td>
-                                <div class="priceWord"></div>
-                            </td>
-                            <td>
-								<div class="priceWord">4,050,000</div>
-							</td>
-							<td>
-								우리은2
-                            </td>
-							<td>
-                                <div>우리은행</div>
-                                <div>1234-1234-1234</div>
-								<div>곽반장</div>
-							</td>
-							<td>
-								2020-05-13 12:00
-							</td>
-                            <td>
-								6월 인건비 납부
-							</td>
-							<td>
-                                <div>2020-06-23 13:00</div>
-                                <div>(등록자:곽주임)</div>
-							</td>
-                            <!-- <td>
-                                <div>2020-06-23 13:00</div>
-                                <div>(실행자:곽주임)</div>
-                            </td>
-                            <td>
-                                <div></div>
-                                <div>2020.06.01 11:00</div>
-                                <div>(승인자:곽주임)</div>
-                            </td>
-                            <td>
-                                <div></div>
-                                <div>2020.06.01 11:00</div>
-                                <div>(승인자:곽소장)</div>
-							</td>
-                            <td>
-                                <div></div>
-                                <div>2020.06.01 11:00</div>
-                                <div>(승인자:이사님)</div>
-							</td> -->
-							<td>
-								승인됨
 							</td>
 						</tr>
 						</tbody>
 					</table>
+
+
+
+					
+                    
+
+
+
+
+
+
+
 				</div>
 			</div>
 		</div>
