@@ -247,7 +247,8 @@
 								<option>100개씩</option>
 							</select>
 						</div> -->
-					</div>
+                    </div>
+                    
 					<table class="searchResultTable summarySort">
 						<tbody>
 						<tr>
@@ -262,7 +263,13 @@
 						</tr>
 						
 						</tbody>
-					</table>
+                    </table>
+                    
+
+
+
+
+
 					<table class="searchResultTable ">
 						<colgroup>
 							<col width="50">
@@ -288,37 +295,21 @@
 						<tr>
 							<th rowspan="2">No.</th>
 							<th rowspan="2">구분</th>
-							<!-- <th rowspan="2">과목코드</th> -->
-							<!-- <th rowspan="2">과목</th> -->
 							<th rowspan="2">거래처</th>
-							<!-- <th colspan="2">예산</th>
-							<th colspan="2">결산</th>
-                            <th rowspan="2">예산대비증감</th>
-                            <th rowspan="2">비율</th> -->
                             <th rowspan="2">해당월</th>
                             <th rowspan="2">회전일</th>
-                            <th rowspan="2">분할금액(원)</th>
-                            <th rowspan="2">당월분(원)</th>
-                            <th rowspan="2">합계금액(원)</th>
-                            <th rowspan="2">총미지급금(원)</th>
+                            <th rowspan="2">분할금액</th>
+                            <th rowspan="2">당월분</th>
+                            <th rowspan="2">합계금액</th>
+                            <th rowspan="2">총미지급금</th>
+							<th rowspan="2">지급일자</th>
 							<th rowspan="2">결제수단</th>
 							<th rowspan="2">결제수단정보</th>
 							<th rowspan="2">결제일</th>
-							<th rowspan="2">지급일자</th>
 							<th rowspan="2">비고</th>
 							<th rowspan="2">등록일</th>
-                            <!-- <th rowspan="2">이체 선택</th>
-                            <th rowspan="2">일반승인</th>
-                            <th rowspan="2">중간승인</th>
-                            <th rowspan="2">최종승인</th> -->
 							<th rowspan="2">관리</th>
 						</tr>
-						<!-- <tr>
-							<th>수입</th>
-							<th>지출</th>
-							<th>수입</th>
-							<th>지출</th>
-						</tr> -->
 						</thead>
 						<tbody>
 
@@ -504,7 +495,9 @@
 							</td>
 						</tr>
 						</tbody>
-					</table>
+                    </table>
+                    
+                    
 				</div>
 			</div>
 		</div>
