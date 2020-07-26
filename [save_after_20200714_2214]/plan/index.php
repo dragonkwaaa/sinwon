@@ -273,7 +273,12 @@
                         </colgroup>
 						<thead>
 						<tr>
-                            <th rowspan="2">선택</th>
+                            <th rowspan="2">
+                                <div class="checkBoxIconBox">
+									<input type="checkbox" name="" value="">
+									<label></label>
+								</div>
+                            </th>
 							<th rowspan="2">일</th>
 							<th rowspan="2">과목</th>
                             <th rowspan="2">거래처</th>
