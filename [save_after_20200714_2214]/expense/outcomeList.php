@@ -1,5 +1,5 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/sinwon/common/pages/head.php';
-	$lCode					=	'111';
+	$lCode					=	'0102';
 	$subCode				=	'005';
 ?>
 <body>
@@ -196,7 +196,12 @@
 						<colgroup></colgroup>
 						<thead>
 						<tr>
-                            <th>일</th>
+                            <th>
+                                <div class="checkBoxIconBox">
+									<input type="checkbox" name="" value="">
+									<label></label>
+								</div>
+                            </th>
                             <th>지출구분</th>
 							<th>지출명</th>
 							<th>계정과목</th>
@@ -215,7 +220,7 @@
 
 
                         <tr>
-                            <td>2</td>
+                            <td></td>
                             <td>
                                 <div class="guideWord">
                                     <div>1. 지출결의서</div>
@@ -280,7 +285,12 @@
 						</tr>
 
 						<tr>
-							<td>1</td>
+							<td>
+                                <div class="checkBoxIconBox">
+									<input type="checkbox" name="" value="">
+									<label></label>
+								</div>
+                            </td>
 							<td>
                                 1. 지출결의서
                             </td>
