@@ -267,7 +267,12 @@
                         </colgroup>
 						<thead>
 						<tr>
-							<th rowspan="2">No.</th>
+							<th rowspan="2">
+                                <div class="checkBoxIconBox">
+									<input type="checkbox" name="" value="">
+									<label></label>
+								</div>
+                            </th>
 							<!-- <th rowspan="2">구분</th> -->
 							<th rowspan="2">과목</th>
                             <th rowspan="2">거래처명</th>
@@ -294,6 +299,7 @@
 						</thead>
 						<tbody>
 						<tr>
+                            <td></td>
 							<td>6</td>
 							<td>
                                 <div class="accInfoGroup">
@@ -413,6 +419,12 @@
 							</td>
 						</tr>
                         <tr>
+                            <td>
+                                <div class="checkBoxIconBox">
+									<input type="checkbox" name="" value="">
+									<label></label>
+								</div>
+                            </td>
 							<td>5</td>
 							<td>
                                 <div class="accInfoGroup">
@@ -529,6 +541,12 @@
 
 
 						<tr>
+                            <td>
+                                <div class="checkBoxIconBox">
+									<input type="checkbox" name="" value="">
+									<label></label>
+								</div>
+                            </td>
 							<td>5</td>
 							<td>
                                 <div class="accInfoGroup">
